@@ -1,0 +1,7 @@
+API Key: AcRJF55YIk2_hkm2YNZgEsWpOwYE6v5xqGMA4k6f41VPOE3gwTs1317Sv8ESHclOYn0TKfjJGv1_nkTO
+Secret: EDInOMVT9ik4qxdVzZqI_6XnvcpZm3XD9jWiuC3GmlWrYewJnS2YTik2D7mJMwVZDAIeTDUQchFno-yF
+
+Sandbox: 
+sb-p3c7p48048616@business.example.com
+
+Pass: =.N4XENy

@@ -1,0 +1,249 @@
+Website Code example "Style" Chat GPT
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Single-file HTML + CSS Example</title>
+  <!--
+    This is a single HTML file that contains embedded CSS (in a <style> tag)
+    and a small amount of JavaScript for interactivity.
+
+    Features:
+    - CSS variables for easy theming
+    - Responsive layout (flex + grid)
+    - Simple navigation, hero section, cards, and form
+    - Accessible, semantic markup
+    - Small animations and utility classes
+  -->
+  <style>
+    /* ====== CSS VARIABLES (THEME) ====== */
+    :root{
+      --bg: #0f1724;           /* dark navy */
+      --card: #0b1220;         /* card bg */
+      --muted: #94a3b8;        /* muted text */
+      --accent: #7c3aed;       /* purple accent */
+      --accent-2: #06b6d4;     /* teal accent */
+      --glass: rgba(255,255,255,0.04);
+      --radius: 14px;
+      --max-width: 1100px;
+      --gap: 1.25rem;
+      --shadow: 0 6px 20px rgba(2,6,23,0.6);
+      --fw-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+
+    /* ====== GLOBAL RESET ====== */
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:var(--fw-sans);
+      background:linear-gradient(180deg,var(--bg) 0%, #071029 100%);
+      color:#e6eef8;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+      padding:2rem 1rem;
+    }
+
+    /* Center page */
+    .wrap{
+      max-width:var(--max-width);
+      margin:0 auto;
+      display:flex;
+      flex-direction:column;
+      gap:var(--gap);
+    }
+
+    /* ====== HEADER / NAV ====== */
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:1rem;
+    }
+    .brand{
+      display:flex;align-items:center;gap:.75rem;text-decoration:none;color:inherit
+    }
+    .logo{
+      width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      box-shadow:var(--shadow);display:grid;place-items:center;font-weight:700;color:white;
+    }
+    nav{display:flex;gap:1rem;align-items:center}
+    nav a{
+      color:var(--muted);text-decoration:none;padding:.35rem .6rem;border-radius:8px;font-weight:600;font-size:.95rem
+    }
+    nav a:hover{color:var(--accent);background:rgba(124,58,237,0.06)}
+
+    .cta{
+      padding:.5rem .85rem;border-radius:10px;background:linear-gradient(90deg,var(--accent),#5b21b6);border:none;color:white;font-weight:700;cursor:pointer
+    }
+
+    /* ====== HERO ====== */
+    .hero{
+      display:grid;grid-template-columns:1fr 420px;gap:2rem;align-items:center;margin-top:.5rem;
+    }
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:2rem;border-radius:var(--radius);box-shadow:var(--shadow)}
+    h1{font-size:clamp(1.6rem, 3.6vw, 2.4rem);margin:0 0 .5rem}
+    p.lead{color:var(--muted);margin:0 0 1rem}
+
+    /* small feature list */
+    .features{display:flex;gap:1rem;flex-wrap:wrap}
+    .feature{background:var(--glass);padding:.6rem .8rem;border-radius:12px;font-size:.95rem;color:var(--muted);display:flex;gap:.6rem;align-items:center}
+    .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(180deg,var(--accent),var(--accent-2))}
+
+    /* ====== CARDS GRID ====== */
+    .grid{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem
+    }
+    .card{background:var(--card);padding:1rem;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.5);border:1px solid rgba(255,255,255,0.02)}
+    .card h3{margin:.25rem 0 .5rem}
+    .card p{margin:0;color:var(--muted);font-size:.95rem}
+
+    /* ====== FORM (right column) ====== */
+    form{display:flex;flex-direction:column;gap:.6rem}
+    label{font-size:.85rem;color:var(--muted)}
+    input,textarea,select{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:.6rem .75rem;border-radius:10px;color:inherit;outline:none}
+    input:focus,textarea:focus,select:focus{border-color:rgba(124,58,237,0.9);box-shadow:0 6px 20px rgba(124,58,237,0.06)}
+    .row{display:flex;gap:.6rem}
+    .small{font-size:.85rem;color:var(--muted)}
+
+    /* ====== FOOTER ====== */
+    footer{padding:1rem 0;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+
+    /* ====== UTILITIES ====== */
+    .muted{color:var(--muted)}
+    .center{display:grid;place-items:center}
+
+    /* ====== RESPONSIVE ====== */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:640px){
+      .wrap{padding:0}
+      nav{display:none}
+      .grid{grid-template-columns:1fr}
+      body{padding:1rem}
+    }
+
+    /* small animation */
+    .pulse{animation:pulse 3s ease-in-out infinite}
+    @keyframes pulse{0%{transform:translateY(0)}50%{transform:translateY(-6px)}100%{transform:translateY(0)}}
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <a class="brand" href="#" aria-label="Homepage">
+        <div class="logo">CB</div>
+        <div>
+          <div style="font-weight:800">CodeBlend</div>
+          <div style="font-size:.8rem;color:var(--muted);margin-top:2px">Single-file demo</div>
+        </div>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#examples">Examples</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="cta">Get started</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-card">
+          <h1>Beautiful single-file HTML + CSS starter</h1>
+          <p class="lead">A compact, production-minded template that combines semantic HTML with modern CSS patterns — variables, responsive grid, and subtle motion. Great for quick prototypes and teaching.</p>
+
+          <div class="features" id="features">
+            <div class="feature"><span class="dot"></span><strong>Responsive</strong><span class="muted"> — grid &amp; flex</span></div>
+            <div class="feature"><span class="dot"></span><strong>Accessible</strong><span class="muted"> — semantic markup</span></div>
+            <div class="feature"><span class="dot"></span><strong>Themeable</strong><span class="muted"> — css variables</span></div>
+          </div>
+
+          <div style="margin-top:1rem" class="grid" id="examples">
+            <article class="card">
+              <h3>Component-style card</h3>
+              <p>Nice small content block with shadow, rounded corners, and subtle border — ideal for dashboards or feature lists.</p>
+            </article>
+
+            <article class="card">
+              <h3>Form-ready</h3>
+              <p>Inputs are styled for focus states and accessibility. Use them inside forms and dialogs.</p>
+            </article>
+
+            <article class="card">
+              <h3>Lightweight</h3>
+              <p>All in one file — no build tools required. Drop into a project or open locally to iterate fast.</p>
+            </article>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-labelledby="contact">
+          <h2 id="contact">Try the form</h2>
+          <p class="small muted">Play with the inputs — this form doesn't send data, it just demonstrates styling.</p>
+
+          <form onsubmit="return handleSubmit(event)">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your name" required />
+
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="you@example.com" required />
+
+            <label for="type">Interested in</label>
+            <select id="type">
+              <option>Prototype</option>
+              <option>Production</option>
+              <option>Consulting</option>
+            </select>
+
+            <label for="message">Message <span class="small muted">(optional)</span></label>
+            <textarea id="message" rows="4" placeholder="Tell us a little bit..."></textarea>
+
+            <div class="row">
+              <button type="submit" class="cta">Send</button>
+              <button type="button" onclick="fillExample()" style="background:transparent;border:1px solid rgba(255,255,255,0.06);padding:.45rem .7rem;border-radius:10px;color:var(--muted)">Fill example</button>
+            </div>
+
+            <div id="note" class="small muted" aria-live="polite"></div>
+          </form>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <div class="muted">Made with ❤️ — single-file template</div>
+      <div class="muted">v1.0 • © Example</div>
+    </footer>
+
+  </div>
+
+  <script>
+    // small interactive helpers
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value || 'friend';
+      const note = document.getElementById('note');
+      note.textContent = `Thanks, ${name}! This demo does not submit data — it's local only.`;
+      // Add a tiny animation to the button to show success
+      const btn = document.querySelector('button.cta');
+      btn.classList.add('pulse');
+      setTimeout(()=>btn.classList.remove('pulse'), 1000);
+      return false;
+    }
+
+    function fillExample(){
+      document.getElementById('name').value = 'Alex Example';
+      document.getElementById('email').value = 'alex@example.com';
+      document.getElementById('message').value = 'Loving the single-file template — thanks!';
+      document.getElementById('note').textContent = 'Example content filled.';
+    }
+  </script>
+</body>
+</html>

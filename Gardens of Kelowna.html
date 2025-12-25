@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flower Society</title>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+</body>
+  </head>
+  <body>
+  <h1>Kelowna Flower Garden's</h1>
+  <p>Kelowna's Flower Garden Club</p> 
+  <style>
+
+
+:root{
+--bg: ##F68686;/* pink */
+--card: #0b1220; /* card bg */
+--muted: #94a3b8; /* muted text */
+--accent: #F695B5; /* coral accent */
+--accent-2: #FDD7D7; /* cream accent */
+--glass: rgba(255,255,255,0.04);
+--radius: 14px;
+--max-width: 1100px;
+--gap: 1.25rem;
+--shadow: 0 6px 20px rgba(2,6,23,0.6);
+--fw-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+margin:0;
+font-family:var(--fw-sans);
+background:linear-gradient(180deg,var(--bg) 0%, white 100%);
+color: #F68686;
+line-height:1.15;
+padding:2rem 1rem;
+}
+
+
+.wrap{
+max-width:var(--max-width);
+margin:0 auto;
+display:flex;
+flex-direction:column;
+gap:var(--gap);
+}
+
+
+header{
+position:center;
+width:100vw;
+left:50%;
+right:50%;
+margin-left:-50vw;
+margin-right:-50vw;
+overflow:hidden;
+height:50vh; /* cropped to about 1/2 screen height */
+}
+
+header img.hero-header {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  background-image: file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/0011_26.jpg('0011_26.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+@media (max-width: 768px) {
+  .hero-header {
+    height: 250px;
+    padding: 50px 15px;
+  }
+
+  .hero-header h1 {
+    font-size: 24px;
+  }
+
+  .hero-header p {
+    font-size: 16px;
+  }
+}
+
+.header-text{
+text-align:center;
+color:#F68686;
+}
+
+
+.header-text h1{
+font-size:clamp(1.8rem,4vw,3rem);
+margin:0;
+position;center
+}
+
+
+.header-text p{
+font-size:1.1rem;
+color:var(--muted);
+position;center
+}
+
+nav{display:flex;gap:1rem;align-items:center;justify-content:center;margin-top:1rem;align-items:center}
+nav a{
+color:var(--muted);
+text-decoration:none;
+padding:.35rem .6rem;
+border-radius:8px;
+font-weight:600;
+font-size:.95rem;
+}
+nav a:hover{color:var(--accent);background:rgba(124,58,237,0.06)}
+
+
+main{margin-top:2rem;}
+
+
+footer{padding:1rem 0;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+.centered {
+text-align: center; /* Centers text horizontally */
+</style>
+</style>
+</head>
+<body>
+<div class="wrap">
+
+
+<header>
+<img src="file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/01126.jpg" alt=centered "Flowers of the Okanagan" class="header-image" 
+<div class="header-text">
+<h1>Welcome to the Flower Gardens of the Okanagan</h1>
+<p></p>
+</div>
+
+<nav>
+<div class="topnav" id="myTopnav">
+  <div class="dropdown">
+  <button class="dropbtn" href="Home.html" class="active">Home</button>
+    <div class="dropdown-content">
+            <a href="Home.html">Home</a>
+         <a href="History.html"></a>
+                    </div>
+                  </div>
+             
+<div class="dropdown">
+    <button class="dropbtn" href="GardensDesign.html" class="active">Garden Design</button>
+    <div class="dropdown-content">
+            <a href="GardenDesign.html">Garden Design</a>
+         <a href="Gardens of Kelowna.html">Gardens of Kelowna</a>
+      <a href="climate.html">Climate</a>
+            <a href="Roots.html">Roots</a>
+                    </div>
+                  </div>
+<div class="dropdown">
+    <button class="dropbtn" href="About.html" class="active">About
+         <div class="dropdown-content">
+         <a href="About.html">About</a>
+      <a href="Boardmembers.html"></a>
+      <a href=".html"></a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+<button class="dropbtn" href="Regional Species.html" class="active">Regional Species</button>
+    <div class="dropdown-content">
+                 <a href="Regional Species.html">Regional Species</a>
+               <a href="History.html">History</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+  <button class="dropbtn" href="Awards.html" class="active">Awards</button>
+   <div class="dropdown-content">
+  <a href="Awards.html" class="active">Awards</a>
+</div>
+</div>
+
+ <div class="dropdown-content">
+    <button class="dropbtn" href="Resources.html" class="active">Resources</button>
+          <div class="dropdown-content">
+         <a href="Resources.html">Resources</a>
+         <a href="https://www.kew.org/kew-gardens">Kew Royal Botanical Gardens</a>
+          <a href="">Index</a>
+  </div>
+</div>
+
+<div class="dropdown">
+    <button class="dropbtn" href="Roses.html" class="active">Roses</button>
+  <div class="dropdown-content">
+            <a href="Roses.html">Roses</a>
+      <a href="https://rose.org/">American Rose Society</a>
+      <a href="https://canadianrosesociety.org/">Canadian Rose Society</a>
+    </div>
+  </div>
+
+ <div class="dropdown">
+   <button class="dropbtn" href="Valley Art.html" class="active">Valley Art</button>
+     <div class="dropdown-content">
+<a href="Valley Art.html">Valley Art</a>
+  </div>
+</div>
+
+   <div class="dropdown">
+     <button class="dropbtn" href="Bridal Bouquet.html" class="active">Bridal Bouquet</button>
+      <div class="dropdown-content">
+<a href="Bridal Bouquets.html">Bridal Bouquets</a>
+ </div>
+</div>
+
+   <div class="dropdown">
+<button class="dropbtn" href="Calendar".html" class="active">Calendar</button>
+   <div class="dropdown-content">
+<a href="Calendar.html" class="active">Calendar</a>
+</div>
+</div>
+  
+  <div class="dropdown">
+    <button class="dropbtn" href="Members.html" class="active">Members</button>
+        <div class="dropdown-content">
+  <a href="Members.html" class="active">Members</a>
+      <a href="Contact.html" class="active">Contact</a>
+      <a href="About.html">About</a>
+      <a href="Resources.html">Resources</a>
+    </div>
+  </div>
+
+</div>
+<style>
+/* Add a white background color to the top navigation */
+.topnav {
+  background-color: #white;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: white;
+  color: #white;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: white;
+  color: #F68686;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #F68686;
+  padding: 14px 16px;
+  background-color: white;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #F68686;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a white background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+  color: white;
+}
+
+/* Add a background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #F68686;
+  color: white;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+</nav>
+
+<main>
+<section>
+          <h2 id="features">Gardens of Kelowna</h2>
+         <p>Welcome to the Flower Gardens of the Okanagan</p>
+
+<h2></h2>
+  <p> 
+    As the Okanagan is widely known for its agriculture, some advancements in horticulture and gardening can be found here. The following links below are privately owned or public flower gardens in of the Okanagan:</p>
+
+    <!-- Load Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<div class="row">
+  <div class="column" style="background-color:#FDD7D7;">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2> The Okanagan Lavender and Herb Farm<h5></h5>
+    </div>
+    <div class="flip-box-back">
+      <h2>  <p> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.99863265828!2d-119.4533165115178!3d49.82369089794076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537d8b94f214a0f3%3A0xc610005030ad3541!2sOkanagan%20Lavender%20%26%20Herb%20Farm!5e0!3m2!1sen!2sca!4v1762294959909!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</p></h2>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="row">
+  <div class="column" style="background-color:#FDD7D7;">
+   <div class="flip-box">
+    <div class="flip-box-inner">
+     <div class="flip-box-front">
+    <h2>Pioneer Gardens<h5>On Kelowna's Waterfront Park, the Pioneer Gardens that are immaculately kept for everyones to see as you pass near the iconic Dolphin Fountains across from the Propera Place event centre.</h5></h2>
+       </div>
+    <div class="flip-box-back">
+   <h2> <p> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5140.621457554119!2d-119.50640030642086!3d49.8929694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537df5bc7b082641%3A0x3d7f48a7c7e64f61!2sPioneer%20Gardens!5e0!3m2!1sen!2sca!4v1762296973696!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ </p></h2>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+  <div class="column" style="background-color:#FDD7D7;">
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+    <h2>Knowles Heritage Park</h2>
+</div>
+    <div class="flip-box-back">
+    <h2> <p> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5141.367789003812!2d-119.48330182575856!3d49.88596256811885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537df3565f82ee31%3A0xd7bfad24486ee63e!2sKnowles%20Heritage%20Park!5e0!3m2!1sen!2sca!4v1762298138550!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+    </p></h2>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="column" style="background-color:#FDD7D7;">
+   <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <h2>Veendam Gardens <h5>The Veedam Gardens are in Kelowna's City Park, where important public events such as Remembrance Day, are held each year. </h5></h2>
+</div>
+        <div class="flip-box-back">
+   <h2> <p>  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5141.442799744594!2d-119.51044130642087!3d49.8852583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537df4a586ed1c77%3A0xc5610b56dc1cdfbe!2sVeendam%20Gardens!5e0!3m2!1sen!2sca!4v1762297197462!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+</p></h2>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+  <div class="column" style="background-color:#FDD7D7;">
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+    <h2>Guishigan Heritage Park <h5>The Guishigan Heritage Park is a gorgeous historical venue that is suitable for picnic lunches, family or corporate events and weddings.</h5></h2>
+      </div>
+    <div class="flip-box-back">
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2571.4861707986634!2d-119.48206201149846!3d49.87089599796957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537d8b571232df3d%3A0x20b57a4bb2b7e2a7!2sGuisachan%20Heritage%20Park!5e0!3m2!1sen!2sca!4v1762296690146!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </p>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#FDD7D7;">
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+    <h2>Kasugai Gardens <h5>In the heart of downtown Kelowna are the traditionally landscaped sunken Kasugai Japanese Gardens. It has great walking paths and a tranquil atmosphere.</h5></h2>
+      </div>
+    <div class="flip-box-back">
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5141.161658195325!2d-119.49765792359713!3d49.8878978714902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537df4a7cae7c6c1%3A0x81673b06fdb30e52!2sKasugai%20Gardens!5e0!3m2!1sen!2sca!4v1762296832522!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </p>
+  </div>
+</div>
+</div>
+</div>
+
+<body>
+    <div class="row">
+  <div class="column"></div>
+  <style>/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+</div>
+
+<style>
+div.scroll-container img {
+  padding: 10px;</style>
+  
+<div class="scroll-container">
+    <img src="C:\Users\geosi\OneDrive\Documents\Code\Flowers\Images\163B9D15.jpeg" style="display: block; margin: auto;" width="350" height="500">
+    <h5> Oasis Lavender Farm, North of Summerland in the Garnet Valley </h5>
+<style> div.scroll-container {
+  background-color: #FDD7D7;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+</style>
+</div>
+</div>
+</div>
+
+</section>
+</main>
+
+
+<footer>
+    <img src="file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/01126.jpg" alt="Flowers of the Okanagan" class="footer-image" 
+<div class="header-text">
+</div>
+<div class="muted"></div>
+<div class="muted"></div>
+</footer>
+
+
+</div>
+
+</body>
+</html>

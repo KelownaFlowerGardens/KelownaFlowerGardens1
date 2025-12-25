@@ -1,0 +1,1665 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flower Society</title>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+</body>
+  </head>
+  <body>
+  <h1>Kelowna Flower Garden's</h1>
+  <p>Kelowna's Flower Garden Club</p> 
+  <style>
+
+
+:root{
+--bg: ##F68686;/* pink */
+--card: #0b1220; /* card bg */
+--muted: #94a3b8; /* muted text */
+--accent: #F695B5; /* coral accent */
+--accent-2: #FDD7D7; /* cream accent */
+--glass: rgba(255,255,255,0.04);
+--radius: 14px;
+--max-width: 1100px;
+--gap: 1.25rem;
+--shadow: 0 6px 20px rgba(2,6,23,0.6);
+--fw-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+margin:0;
+font-family:var(--fw-sans);
+background:linear-gradient(180deg,var(--bg) 0%, white 100%);
+color: #F68686;
+line-height:1.15;
+padding:2rem 1rem;
+}
+
+
+.wrap{
+max-width:var(--max-width);
+margin:0 auto;
+display:flex;
+flex-direction:column;
+gap:var(--gap);
+}
+
+
+header{
+position:center;
+width:100vw;
+left:50%;
+right:50%;
+margin-left:-50vw;
+margin-right:-50vw;
+overflow:hidden;
+height:50vh; /* cropped to about 1/2 screen height */
+}
+
+header img.hero-header {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  background-image: file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/0011_26.jpg('0011_26.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+@media (max-width: 768px) {
+  .hero-header {
+    height: 250px;
+    padding: 50px 15px;
+  }
+
+  .hero-header h1 {
+    font-size: 24px;
+  }
+
+  .hero-header p {
+    font-size: 16px;
+  }
+}
+
+.header-text{
+text-align:center;
+color:#F68686;
+}
+
+
+.header-text h1{
+font-size:clamp(1.8rem,4vw,3rem);
+margin:0;
+position;center
+}
+
+
+.header-text p{
+font-size:1.1rem;
+color:var(--muted);
+position;center
+}
+
+nav{display:flex;gap:1rem;align-items:center;justify-content:center;margin-top:1rem;align-items:center}
+nav a{
+color:var(--muted);
+text-decoration:none;
+padding:.35rem .6rem;
+border-radius:8px;
+font-weight:600;
+font-size:.95rem;
+}
+nav a:hover{color:var(--accent);background:rgba(124,58,237,0.06)}
+
+
+main{margin-top:2rem;}
+
+
+footer{padding:1rem 0;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+.centered {
+text-align: center; /* Centers text horizontally */
+</style>
+</style>
+</head>
+<body>
+<div class="wrap">
+
+
+<header>
+<img src="file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/01126.jpg" alt=centered "Flowers of the Okanagan" class="header-image" 
+<div class="header-text">
+<h1>Welcome to the Flower Gardens of the Okanagan</h1>
+<p></p>
+</div>
+
+<nav>
+<div class="topnav" id="myTopnav">
+  <div class="dropdown">
+  <button class="dropbtn" href="Home.html" class="active">Home</button>
+    <div class="dropdown-content">
+            <a href="Home.html">Home</a>
+         <a href="History.html"></a>
+                    </div>
+                  </div>
+             
+<div class="dropdown">
+    <button class="dropbtn" href="GardensDesign.html" class="active">Garden Design</button>
+    <div class="dropdown-content">
+            <a href="GardenDesign.html">Garden Design</a>
+         <a href="Gardens of Kelowna.html">Gardens of Kelowna</a>
+      <a href="climate.html">Climate</a>
+            <a href="Roots.html">Roots</a>
+                    </div>
+                  </div>
+<div class="dropdown">
+    <button class="dropbtn" href="About.html" class="active">About
+         <div class="dropdown-content">
+         <a href="About.html">About</a>
+      <a href="Boardmembers.html"></a>
+      <a href=".html"></a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+<button class="dropbtn" href="Regional Species.html" class="active">Regional Species</button>
+    <div class="dropdown-content">
+                 <a href="Regional Species.html">Regional Species</a>
+               <a href="History.html">History</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+  <button class="dropbtn" href="Awards.html" class="active">Awards</button>
+   <div class="dropdown-content">
+  <a href="Awards.html" class="active">Awards</a>
+</div>
+</div>
+
+ <div class="dropdown-content">
+    <button class="dropbtn" href="Resources.html" class="active">Resources</button>
+          <div class="dropdown-content">
+         <a href="Resources.html">Resources</a>
+         <a href="https://www.kew.org/kew-gardens">Kew Royal Botanical Gardens</a>
+          <a href="">Index</a>
+  </div>
+</div>
+
+<div class="dropdown">
+    <button class="dropbtn" href="Roses.html" class="active">Roses</button>
+  <div class="dropdown-content">
+            <a href="Roses.html">Roses</a>
+      <a href="https://rose.org/">American Rose Society</a>
+      <a href="https://canadianrosesociety.org/">Canadian Rose Society</a>
+    </div>
+  </div>
+
+ <div class="dropdown">
+   <button class="dropbtn" href="Valley Art.html" class="active">Valley Art</button>
+     <div class="dropdown-content">
+<a href="Valley Art.html">Valley Art</a>
+  </div>
+</div>
+
+   <div class="dropdown">
+     <button class="dropbtn" href="Bridal Bouquet.html" class="active">Bridal Bouquet</button>
+      <div class="dropdown-content">
+<a href="Bridal Bouquets.html">Bridal Bouquets</a>
+ </div>
+</div>
+
+   <div class="dropdown">
+<button class="dropbtn" href="Calendar".html" class="active">Calendar</button>
+   <div class="dropdown-content">
+<a href="Calendar.html" class="active">Calendar</a>
+</div>
+</div>
+  
+  <div class="dropdown">
+    <button class="dropbtn" href="Members.html" class="active">Members</button>
+        <div class="dropdown-content">
+  <a href="Members.html" class="active">Members</a>
+      <a href="Contact.html" class="active">Contact</a>
+      <a href="About.html">About</a>
+      <a href="Resources.html">Resources</a>
+    </div>
+  </div>
+
+</div>
+<style>
+/* Add a white background color to the top navigation */
+.topnav {
+  background-color: #white;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: white;
+  color: #white;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: white;
+  color: #F68686;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #F68686;
+  padding: 14px 16px;
+  background-color: white;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #F68686;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a white background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+  color: white;
+}
+
+/* Add a background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #F68686;
+  color: white;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+</nav>
+
+<style>
+body {
+  font-family: var(fw-sans);
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+</style>
+</nav>
+
+<section>
+
+  <h1> Shop </h1>
+<p> </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PayPal Art Store</title>
+
+<script src="https://www.paypal.com/sdk/js?client-id=Ad0sBpOG06AfGgEDsO82wMn-3HnkKTe9FPAiBfgCUSd7pShaf_hEQym5_u1lmrzTF1qgE4yg3C85Fiff
+&currency=CAD"></script>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f6f6f6;
+}
+
+/* HEADER */
+header {
+  background: #F68686;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 20px;
+  padding: 30px;
+}
+
+/* SHOP */
+.shop {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* PRODUCT */
+.product {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product h3 {
+  margin: 10px 0 5px;
+}
+
+.price {
+  font-weight: bold;
+  color: #F68686;
+}
+
+/* FORM */
+.form-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+button {
+  background: #F68686;
+  border: none;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border-radius: 25px;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<p>
+  <h1>Artist Marketplace</h1>
+</p>
+
+<div class="container">
+
+  <!-- SHOP -->
+  <div class="shop" id="shop"></div>
+
+  <!-- SUBMISSION FORM -->
+  <div class="form-box">
+    <h3>Submit Artwork</h3>
+
+    <input id="artist" placeholder="Artist Name" required>
+    <input id="title" placeholder="Artwork Title" required>
+    <textarea id="desc" placeholder="Description"></textarea>
+    <input id="price" type="number" placeholder="Price ($)" step="0.01" required>
+    <input id="file" type="file" accept=".jpg,.png,.pdf,.mp4">
+
+    <button onclick="submitArtwork()">Submit</button>
+  </div>
+
+</div>
+
+<script>
+let products = JSON.parse(localStorage.getItem("products")) || [];
+
+function submitArtwork() {
+  const product = {
+    artist: artist.value,
+    title: title.value,
+    desc: desc.value,
+    price: price.value,
+    image: "https://via.placeholder.com/300"
+  };
+
+  products.push(product);
+  localStorage.setItem("products", JSON.stringify(products));
+  renderShop();
+}
+
+function renderShop() {
+  shop.innerHTML = "";
+
+  products.forEach((p, index) => {
+    const div = document.createElement("div");
+    div.className = "product";
+    div.innerHTML = `
+      <img src="${p.image}">
+      <h3>${p.title}</h3>
+      <p>${p.artist}</p>
+      <p class="price">$${p.price}</p>
+      <div id="paypal-${index}"></div>
+    `;
+    shop.appendChild(div);
+
+    paypal.Buttons({
+      createOrder: (data, actions) => {
+        return actions.order.create({
+          purchase_units: [{
+            amount: { value: p.price },
+            description: p.title
+          }]
+        });
+      },
+      onApprove: (data, actions) => {
+        return actions.order.capture().then(() => {
+          alert("Payment successful!");
+        });
+      }
+    }).render(`#paypal-${index}`);
+  });
+}
+
+renderShop();
+</script>
+<script>
+{
+  "individual_owners": [
+    {
+      "names": [
+        {
+          "prefix": "Mr.",
+          "given_name": "John",
+          "surname": "Doe",
+          "middle_name": "Middle",
+          "suffix": "Jr.",
+          "full_name": "John Middle Doe Jr.",
+          "type": "LEGAL"
+        }
+      ],
+      "citizenship": "US",
+      "addresses": [
+        {
+          "address_line_1": "One Washington Square",
+          "address_line_2": "Apt 123",
+          "admin_area_2": "San Jose",
+          "admin_area_1": "CA",
+          "postal_code": "95112",
+          "country_code": "US",
+          "type": "HOME"
+        }
+      ],
+      "phones": [
+        {
+          "country_code": "1",
+          "national_number": "6692468839",
+          "extension_number": "1234",
+          "type": "MOBILE"
+        }
+      ],
+      "birth_details": {
+        "date_of_birth": "1955-12-29"
+      },
+      "type": "PRIMARY"
+    }
+  ],
+  "business_entity": {
+    "business_type": {
+      "type": "INDIVIDUAL",
+      "subtype": "ASSO_TYPE_INCORPORATED"
+    },
+    "business_industry": {
+      "category": "1004",
+      "mcc_code": "8931",
+      "subcategory": "2025"
+    },
+    "business_incorporation": {
+      "incorporation_country_code": "US",
+      "incorporation_date": "1986-12-29"
+    },
+    "names": [
+      {
+        "business_name": "Test Enterprise",
+        "type": "LEGAL_NAME"
+      }
+    ],
+    "emails": [
+      {
+        "type": "CUSTOMER_SERVICE",
+        "email": "customerservice@example.com"
+      }
+    ],
+    "website": "https://mystore.testenterprises.com",
+    "addresses": [
+      {
+        "address_line_1": "One Washington Square",
+        "address_line_2": "Apt 123",
+        "admin_area_2": "San Jose",
+        "admin_area_1": "CA",
+        "postal_code": "95112",
+        "country_code": "US",
+        "type": "WORK"
+      }
+    ],
+    "phones": [
+      {
+        "country_code": "1",
+        "national_number": "6692478833",
+        "extension_number": "1234",
+        "type": "CUSTOMER_SERVICE"
+      }
+    ],
+    "beneficial_owners": {
+      "individual_beneficial_owners": [
+        {
+          "names": [
+            {
+              "prefix": "Mr.",
+              "given_name": "John",
+              "surname": "Doe",
+              "middle_name": "Middle",
+              "suffix": "Jr.",
+              "full_name": "John Middle Doe Jr.",
+              "type": "LEGAL"
+            }
+          ],
+          "citizenship": "US",
+          "addresses": [
+            {
+              "address_line_1": "One Washington Square",
+              "address_line_2": "Apt 123",
+              "admin_area_2": "San Jose",
+              "admin_area_1": "CA",
+              "postal_code": "95112",
+              "country_code": "US",
+              "type": "HOME"
+            }
+          ],
+          "phones": [
+            {
+              "country_code": "1",
+              "national_number": "6692468839",
+              "extension_number": "1234",
+              "type": "MOBILE"
+            }
+          ],
+          "birth_details": {
+            "date_of_birth": "1955-12-29"
+          },
+          "percentage_of_ownership": "50"
+        }
+      ],
+      "business_beneficial_owners": [
+        {
+          "business_type": {
+            "type": "INDIVIDUAL",
+            "subtype": "ASSO_TYPE_INCORPORATED"
+          },
+          "business_industry": {
+            "category": "1004",
+            "mcc_code": "8931",
+            "subcategory": "2025"
+          },
+          "business_incorporation": {
+            "incorporation_country_code": "US",
+            "incorporation_date": "1986-12-29"
+          },
+          "names": [
+            {
+              "business_name": "Test Enterprise",
+              "type": "LEGAL_NAME"
+            }
+          ],
+          "emails": [
+            {
+              "type": "CUSTOMER_SERVICE",
+              "email": "customerservice@example.com"
+            }
+          ],
+          "website": "https://mystore.testenterprises.com",
+          "addresses": [
+            {
+              "address_line_1": "One Washington Square",
+              "address_line_2": "Apt 123",
+              "admin_area_2": "San Jose",
+              "admin_area_1": "CA",
+              "postal_code": "95112",
+              "country_code": "US",
+              "type": "WORK"
+            }
+          ],
+          "phones": [
+            {
+              "country_code": "1",
+              "national_number": "6692478833",
+              "extension_number": "1234",
+              "type": "CUSTOMER_SERVICE"
+            }
+          ],
+          "percentage_of_ownership": "50"
+        }
+      ]
+    },
+    "office_bearers": [
+      {
+        "names": [
+          {
+            "prefix": "Mr.",
+            "given_name": "John",
+            "surname": "Doe",
+            "middle_name": "Middle",
+            "suffix": "Jr.",
+            "full_name": "John Middle Doe Jr.",
+            "type": "LEGAL"
+          }
+        ],
+        "citizenship": "US",
+        "addresses": [
+          {
+            "address_line_1": "One Washington Square",
+            "address_line_2": "Apt 123",
+            "admin_area_2": "San Jose",
+            "admin_area_1": "CA",
+            "postal_code": "95112",
+            "country_code": "US",
+            "type": "HOME"
+          }
+        ],
+        "phones": [
+          {
+            "country_code": "1",
+            "national_number": "6692468839",
+            "extension_number": "1234",
+            "type": "MOBILE"
+          }
+        ],
+        "birth_details": {
+          "date_of_birth": "1955-12-29"
+        },
+        "role": "DIRECTOR"
+      }
+    ],
+    "annual_sales_volume_range": {
+      "minimum_amount": {
+        "currency_code": "CAD",
+        "value": "10000"
+      },
+      "maximum_amount": {
+        "currency_code": "CAD",
+        "value": "50000"
+      }
+    },
+    "average_monthly_volume_range": {
+      "minimum_amount": {
+        "currency_code": "CAD",
+        "value": "1000"
+      },
+      "maximum_amount": {
+        "currency_code": "CAD",
+        "value": "50000"
+      }
+    },
+    "purpose_code": "P0104"
+  },
+  "email": "accountemail@example.com",
+  "preferred_language_code": "en-US",
+  "tracking_id": "testenterprices123122",
+  "partner_config_override": {
+    "return_url": "https://testenterprises.com/merchantonboarded",
+    "return_url_description": "the url to return the merchant after the paypal onboarding process.",
+    "show_add_credit_card": true
+  },
+  "operations": [
+    {
+      "operation": "API_INTEGRATION",
+      "api_integration_preference": {
+        "rest_api_integration": {
+          "integration_type": "THIRD_PARTY",
+          "integration_method": "PAYPAL",
+          "third_party_details": {
+            "features": [
+              "REFUND",
+              "PARTNER_FEE"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "products": [
+    "EXPRESS_CHECKOUT"
+  ],
+  "legal_consents": [
+    {
+      "type": "SHARE_DATA_CONSENT",
+      "granted": true
+    }
+  ],
+  "payout_attributes": {
+    "marketplace": true,
+    "kyc_required": true,
+    "country_transfer_method_currency_selection": [
+      {
+        "country": "US",
+        "transfer_methods": [
+          {
+            "transfer_method_type": "BANK_ACCOUNT",
+            "currencies": [
+              "CAD"
+            ]
+          },
+          {
+            "transfer_method_type": "PAYPAL"
+          }
+        ]
+      },
+      {
+        "country": "CA",
+        "transfer_methods": [
+          {
+            "transfer_method_type": "WIRE",
+            "currencies": [
+              "CAD"
+            ]
+          },
+          {
+            "transfer_method_type": "VENMO"
+          }
+        ]
+      }
+    ]
+  }
+}
+
+</script>
+<script>{
+  "sender_batch_header": {
+    "sender_batch_id": "Payouts_2018_100007",
+    "email_subject": "You have a payout!",
+    "email_message": "You have received a payout! Thanks for using our service!"
+  },
+  "items": [
+    {
+      "recipient_type": "EMAIL",
+      "amount": {
+        "value": "9.87",
+        "currency": "CAD"
+      },
+      "note": "Thanks for your patronage!",
+      "sender_item_id": "201403140001",
+      "receiver": "receiver@example.com",
+      "alternate_notification_method": {
+        "phone": {
+          "country_code": "91",
+          "national_number": "9999988888"
+        }
+      },
+      "notification_language": "fr-FR"
+    },
+    {
+      "recipient_type": "PHONE",
+      "amount": {
+        "value": "112.34",
+        "currency": "USD"
+      },
+      "note": "Thanks for your support!",
+      "sender_item_id": "201403140002",
+      "receiver": "91-734-234-1234"
+    },
+    {
+      "recipient_type": "PAYPAL_ID",
+      "amount": {
+        "value": "5.32",
+        "currency": "USD"
+      },
+      "note": "Thanks for your patronage!",
+      "sender_item_id": "201403140003",
+      "receiver": "G83JXTJ5EHCQ2",
+      "purpose": "GOODS"
+    }
+  ]
+}
+</script>
+<script>// client-side JavaScript
+
+
+function encodeObjectToBase64(object) {
+  const objectString = JSON.stringify(object);
+  return window.btoa(objectString);
+}
+
+
+const clientId = "Ad0sBpOG06AfGgEDsO82wMn-3HnkKTe9FPAiBfgCUSd7pShaf_hEQym5_u1lmrzTF1qgE4yg3C85Fiff";
+const sellerPayerId = "SELLER-PAYER-ID"; // preferred
+// const sellerEmail = "SELLER-ACCOUNT-EMAIL"; // use instead of payer-id if required
+
+
+const header = {
+  alg: "none"
+};
+const encodedHeader = encodeObjectToBase64(header);
+
+
+const payload = {
+  iss: clientId,
+  payer_id: sellerPayerId
+  // email: sellerEmail
+};
+const encodedPayload = encodeObjectToBase64(payload);
+
+
+const jwt = `${encodedHeader}.${encodedPayload}.`; // json web token
+console.log(`Paypal-Auth-Assertion=${jwt}`);</script>
+<script><script src="https://www.paypal.com/sdk/js?client-id=Ad0sBpOG06AfGgEDsO82wMn-3HnkKTe9FPAiBfgCUSd7pShaf_hEQym5_u1lmrzTF1qgE4yg3C85Fiff&currency=USD&intent=capture"></script>
+
+<div id="paypal-button"></div>
+
+<script>
+paypal.Buttons({
+  createOrder: (data, actions) => {
+    return actions.order.create({
+      purchase_units: [{
+        amount: {
+          value: "100.00",
+          breakdown: {
+            item_total: { value: "100.00", currency_code: "CAD" }
+          }
+        },
+        payee: {
+          merchant_id: "ARTIST_PAYPAL_MERCHANT_ID"
+        },
+        payment_instruction: {
+          disbursement_mode: "INSTANT",
+          platform_fees: [{
+            amount: {
+              value: "15.00",
+              currency_code: "CAD"
+            },
+            payee: {
+              merchant_id: "WU5FT446TYZVC"
+            }
+          }]
+        }
+      }]
+    });
+  },
+
+  onApprove: (data, actions) => {
+    return actions.order.capture().then(details => {
+      alert("Payment completed & artist paid automatically");
+    });
+  }
+}).render('#paypal-button');
+</script>
+<script>{
+  "purchase_units": [{
+    "amount": { "value": "100.00" },
+    "payee": { "merchant_id": "ARTIST_MERCHANT_ID" },
+    "payment_instruction": {
+      "disbursement_mode": "INSTANT",
+      "platform_fees": [{
+        "amount": { "value": "15.00" },
+        "payee": { "merchant_id": "PLATFORM_MERCHANT_ID" }
+      }]
+    }
+  }]
+}
+</script>
+
+<script>
+  /wp-content/plugins/artwork-submission/artwork-submission.php
+<?php
+/*
+Plugin Name: Artwork Submission Form
+Description: Frontend artwork submission for marketplace
+Version: 1.0
+*/
+
+if (!defined('ABSPATH')) exit;
+
+/* REGISTER CUSTOM POST TYPE */
+function register_artwork_submission_cpt() {
+  register_post_type('artwork_submission', [
+    'labels' => [
+      'name' => 'Artwork Submissions',
+      'singular_name' => 'Artwork Submission'
+    ],
+    'public' => false,
+    'show_ui' => true,
+    'supports' => ['title']
+  ]);
+}
+add_action('init', 'register_artwork_submission_cpt');
+
+/* SHORTCODE */
+function artwork_submission_form_shortcode() {
+  if (!empty($_POST['artwork_submit'])) {
+
+    $post_id = wp_insert_post([
+      'post_type' => 'artwork_submission',
+      'post_status' => 'pending',
+      'post_title' => sanitize_text_field($_POST['title'])
+    ]);
+
+    if ($post_id) {
+
+      update_post_meta($post_id, 'artist_name', sanitize_text_field($_POST['artist']));
+      update_post_meta($post_id, 'description', sanitize_textarea_field($_POST['description']));
+      update_post_meta($post_id, 'price', floatval($_POST['price']));
+      update_post_meta($post_id, 'paypal_email', sanitize_email($_POST['paypal_email']));
+
+      if (!empty($_FILES['artwork_file']['name'])) {
+        require_once(ABSPATH . 'wp-admin/includes/file.php');
+        $upload = wp_handle_upload($_FILES['artwork_file'], ['test_form' => false]);
+        if (!isset($upload['error'])) {
+          update_post_meta($post_id, 'artwork_file', esc_url($upload['url']));
+        }
+      }
+    }
+
+    echo '<p style="color:green;">Submission received. Pending approval.</p>';
+  }
+
+  ob_start();
+  ?>
+
+  <form method="post" enctype="multipart/form-data">
+
+    <p>
+      <label>Artist Name</label><br>
+      <input type="text" name="artist" required>
+    </p>
+
+    <p>
+      <label>Artwork Title</label><br>
+      <input type="text" name="title" required>
+    </p>
+
+    <p>
+      <label>Description</label><br>
+      <textarea name="description" required></textarea>
+    </p>
+
+    <p>
+      <label>Price ($)</label><br>
+      <input type="number" step="0.01" name="price" required>
+    </p>
+
+    <p>
+      <label>PayPal Email</label><br>
+      <input type="email" name="paypal_email" required>
+    </p>
+
+    <p>
+      <label>Upload File</label><br>
+      <input type="file" name="artwork_file" accept=".jpg,.png,.pdf,.mp4,.mov" required>
+    </p>
+
+    <p>
+      <button type="submit" name="artwork_submit">Submit Artwork</button>
+    </p>
+
+  </form>
+
+  <?php
+  return ob_get_clean();
+}
+add_shortcode('artwork_submission_form', 'artwork_submission_form_shortcode');
+
+/wp-content/plugins/artwork-to-product/artwork-to-product.php
+
+
+<?php
+/*
+Plugin Name: Artwork → WooCommerce Product
+Description: Auto-create WooCommerce products when artwork is approved
+Version: 1.0
+*/
+
+if (!defined('ABSPATH')) exit;
+
+/* TRIGGER ON STATUS CHANGE */
+add_action('transition_post_status', 'artwork_create_wc_product', 10, 3);
+
+function artwork_create_wc_product($new_status, $old_status, $post) {
+
+  if ($post->post_type !== 'artwork_submission') return;
+  if ($old_status === 'publish' || $new_status !== 'publish') return;
+
+  // Prevent duplicates
+  if (get_post_meta($post->ID, '_wc_product_id', true)) return;
+
+  // Get submission data
+  $price = get_post_meta($post->ID, 'price', true);
+  $file_url = get_post_meta($post->ID, 'artwork_file', true);
+  $artist_name = get_post_meta($post->ID, 'artist_name', true);
+  $paypal_email = get_post_meta($post->ID, 'paypal_email', true);
+
+  // Attempt to locate artist user by PayPal email
+  $artist_user = get_user_by('email', $paypal_email);
+  if (!$artist_user) return;
+
+  $artist_merchant_id = get_user_meta($artist_user->ID, 'paypal_merchant_id', true);
+  if (!$artist_merchant_id) return;
+
+  // Create WooCommerce product
+  $product = new WC_Product_Simple();
+  $product->set_name($post->post_title);
+  $product->set_price($price);
+  $product->set_regular_price($price);
+  $product->set_virtual(true);
+  $product->set_downloadable(true);
+  $product->set_description(get_post_meta($post->ID, 'description', true));
+
+  // Set downloadable file
+  $download_id = md5($file_url);
+  $product->set_downloads([
+    $download_id => [
+      'name' => $post->post_title,
+      'file' => $file_url
+    ]
+  ]);
+
+  $product_id = $product->save();
+
+  // Store artist + PayPal info
+  update_post_meta($product_id, '_artist_user_id', $artist_user->ID);
+  update_post_meta($product_id, '_artist_merchant_id', $artist_merchant_id);
+
+  // Link back to submission
+  update_post_meta($post->ID, '_wc_product_id', $product_id);
+}
+
+/wp-content/plugins/paypal-split-payments/paypal-split-payments.php
+<?php
+/*
+Plugin Name: PayPal Split Payments (Marketplace)
+Description: Inject PayPal split payments using artist merchant IDs
+Version: 1.0
+*/
+
+if (!defined('ABSPATH')) exit;
+
+/**
+ * PLATFORM SETTINGS
+ */
+define('PLATFORM_MERCHANT_ID', 'WU5FT446TYZVC');
+define('PLATFORM_COMMISSION_PERCENT', 15); // 15%
+
+/**
+ * MODIFY PAYPAL ORDER BEFORE SEND
+ */
+add_filter(
+  'woocommerce_paypal_payments_purchase_unit_from_wc_order',
+  'inject_split_payment',
+  10,
+  2
+);
+
+function inject_split_payment($purchase_unit, $order) {
+
+  // Only single-vendor orders supported here
+  $items = $order->get_items();
+  if (count($items) !== 1) return $purchase_unit;
+
+  $item = array_values($items)[0];
+  $product_id = $item->get_product_id();
+
+  $artist_merchant_id = get_post_meta($product_id, '_artist_merchant_id', true);
+  if (!$artist_merchant_id) return $purchase_unit;
+
+  $total = (float) $order->get_total();
+  $platform_fee = round(($total * PLATFORM_COMMISSION_PERCENT) / 100, 2);
+  $artist_amount = round($total - $platform_fee, 2);
+
+  // Override PayPal purchase unit
+  $purchase_unit['payee'] = [
+    'merchant_id' => $artist_merchant_id
+  ];
+
+  $purchase_unit['amount'] = [
+    'currency_code' => $order->get_currency(),
+    'value' => number_format($total, 2, '.', '')
+  ];
+
+  $purchase_unit['payment_instruction'] = [
+    'disbursement_mode' => 'INSTANT',
+    'platform_fees' => [[
+      'amount' => [
+        'currency_code' => $order->get_currency(),
+        'value' => number_format($platform_fee, 2, '.', '')
+      ],
+      'payee' => [
+        'merchant_id' => PLATFORM_MERCHANT_ID
+      ]
+    ]]
+  ];
+
+  return $purchase_unit;
+}
+
+
+</script>
+<script>/wp-content/plugins/secure-artwork-delivery/secure-artwork-delivery.php
+<?php
+/*
+Plugin Name: Secure Artwork Delivery
+Description: Secure, expiring digital delivery for marketplace
+Version: 1.0
+*/
+
+if (!defined('ABSPATH')) exit;
+
+/**
+ * CONFIG
+ */
+define('DOWNLOAD_EXPIRY_DAYS', 3);      // Link expires after 3 days
+define('DOWNLOAD_LIMIT', 3);            // Max downloads per purchase
+
+/**
+ * LOCK DOWNLOADS UNTIL PAYMENT COMPLETE
+ */
+add_filter('woocommerce_is_download_permitted', function ($allowed, $product, $order) {
+  if (!$order) return false;
+  return $order->has_status('completed');
+}, 10, 3);
+
+/**
+ * GRANT SECURE DOWNLOAD ACCESS ON COMPLETION
+ */
+add_action('woocommerce_order_status_completed', function ($order_id) {
+
+  $order = wc_get_order($order_id);
+  if (!$order) return;
+
+  foreach ($order->get_items() as $item) {
+
+    $product = $item->get_product();
+    if (!$product || !$product->is_downloadable()) continue;
+
+    $downloads = $product->get_downloads();
+
+    foreach ($downloads as $download) {
+
+      wc_downloadable_file_permission([
+        'download_id'         => $download->get_id(),
+        'product_id'          => $product->get_id(),
+        'order_id'            => $order_id,
+        'user_id'             => $order->get_user_id(),
+        'downloads_remaining' => DOWNLOAD_LIMIT,
+        'access_granted'      => current_time('mysql'),
+        'access_expires'      => date(
+          'Y-m-d H:i:s',
+          strtotime('+' . DOWNLOAD_EXPIRY_DAYS . ' days')
+        )
+      ]);
+    }
+  }
+});
+
+/**
+ * REVOKE ACCESS ON REFUND OR CANCEL
+ */
+add_action('woocommerce_order_status_refunded', 'revoke_downloads');
+add_action('woocommerce_order_status_cancelled', 'revoke_downloads');
+
+function revoke_downloads($order_id) {
+  global $wpdb;
+
+  $wpdb->delete(
+    $wpdb->prefix . 'woocommerce_downloadable_product_permissions',
+    ['order_id' => $order_id]
+  );
+}
+
+</script>
+
+<script>
+  /wp-content/plugins/paypal-webhooks/paypal-webhooks.php
+
+<?php
+/*
+Plugin Name: PayPal Webhooks (Marketplace)
+Description: Handles PayPal payment, dispute & refund webhooks
+Version: 1.0
+*/
+
+if (!defined('ABSPATH')) exit;
+
+/**
+ * CONFIG
+ */
+define('PAYPAL_CLIENT_ID', 'AUVBsFKji3HOrZDE3_W5FxumY1ZYVKpEOCvai_XCGdMpwNvvUhdqIFG-353xpn5adqXipKCS1klLjsaS');
+define('PAYPAL_SECRET', 'YOUR_CLIENT_SECRET');
+define('PAYPAL_WEBHOOK_ID', '88F94666TW317491S');
+define('PAYPAL_API', 'https://api-m.paypal.com'); // LIVE
+// Sandbox: https://api-m.sandbox.paypal.com
+
+/**
+ * REGISTER WEBHOOK ENDPOINT
+ */
+add_action('rest_api_init', function () {
+  register_rest_route('paypal/v1', '/webhook', [
+    'methods'  => 'POST',
+    'callback' => 'paypal_handle_webhook',
+    'permission_callback' => '__return_true'
+  ]);
+});
+
+/**
+ * HANDLE WEBHOOK
+ */
+function paypal_handle_webhook(WP_REST_Request $request) {
+
+  $body = $request->get_body();
+  $headers = getallheaders();
+
+  if (!paypal_verify_signature($headers, $body)) {
+    return new WP_REST_Response(['error' => 'Invalid signature'], 400);
+  }
+
+  $event = json_decode($body, true);
+  $event_type = $event['event_type'] ?? '';
+
+  switch ($event_type) {
+
+    case 'PAYMENT.CAPTURE.COMPLETED':
+      paypal_mark_order_completed($event);
+      break;
+
+    case 'PAYMENT.CAPTURE.DENIED':
+    case 'PAYMENT.CAPTURE.REFUNDED':
+      paypal_mark_order_refunded($event);
+      break;
+
+    case 'CUSTOMER.DISPUTE.CREATED':
+    case 'CUSTOMER.DISPUTE.RESOLVED':
+      paypal_handle_dispute($event);
+      break;
+  }
+
+  return new WP_REST_Response(['status' => 'ok'], 200);
+}
+
+/**
+ * VERIFY PAYPAL SIGNATURE
+ */
+function paypal_verify_signature($headers, $body) {
+
+  $token = paypal_get_access_token();
+
+  $verification = [
+    'transmission_id'   => $headers['paypal-transmission-id'] ?? '',
+    'transmission_time' => $headers['paypal-transmission-time'] ?? '',
+    'cert_url'          => $headers['paypal-cert-url'] ?? '',
+    'auth_algo'         => $headers['paypal-auth-algo'] ?? '',
+    'transmission_sig'  => $headers['paypal-transmission-sig'] ?? '',
+    'webhook_id'        => PAYPAL_WEBHOOK_ID,
+    'webhook_event'     => json_decode($body, true)
+  ];
+
+  $response = wp_remote_post(
+    PAYPAL_API . '/v1/notifications/verify-webhook-signature',
+    [
+      'headers' => [
+        'Authorization' => 'Bearer ' . $token,
+        'Content-Type'  => 'application/json'
+      ],
+      'body' => json_encode($verification)
+    ]
+  );
+
+  $result = json_decode(wp_remote_retrieve_body($response), true);
+  return ($result['verification_status'] ?? '') === 'SUCCESS';
+}
+
+/**
+ * ACCESS TOKEN
+ */
+function paypal_get_access_token() {
+  $response = wp_remote_post(
+    PAYPAL_API . '/v1/oauth2/token',
+    [
+      'headers' => [
+        'Authorization' => 'Basic ' . base64_encode(PAYPAL_CLIENT_ID . ':' . PAYPAL_SECRET)
+      ],
+      'body' => 'grant_type=client_credentials'
+    ]
+  );
+
+  $data = json_decode(wp_remote_retrieve_body($response), true);
+  return $data['access_token'];
+}
+
+/**
+ * ORDER SYNC
+ */
+function paypal_mark_order_completed($event) {
+  $order_id = paypal_get_order_id($event);
+  if ($order_id) {
+    $order = wc_get_order($order_id);
+    if ($order && !$order->is_paid()) {
+      $order->payment_complete();
+    }
+  }
+}
+
+function paypal_mark_order_refunded($event) {
+  $order_id = paypal_get_order_id($event);
+  if ($order
+
+</script>
+<script>
+  /wp-content/plugins/paypal-multi-artist-cart/paypal-multi-artist-cart.php
+
+  <?php
+/*
+Plugin Name: PayPal Multi-Artist Cart Support
+Description: Enables multi-artist carts with PayPal split payments
+Version: 1.0
+*/
+
+if (!defined('ABSPATH')) exit;
+
+/**
+ * PLATFORM SETTINGS
+ */
+define('PLATFORM_MERCHANT_ID', 'WU5FT446TYZVC');
+define('PLATFORM_COMMISSION_PERCENT', 15);
+
+/**
+ * BUILD MULTIPLE PAYPAL PURCHASE UNITS
+ */
+add_filter(
+  'woocommerce_paypal_payments_purchase_units_from_wc_order',
+  'build_multi_artist_purchase_units',
+  10,
+  2
+);
+
+function build_multi_artist_purchase_units($purchase_units, $order) {
+
+  $artist_groups = [];
+
+  foreach ($order->get_items() as $item) {
+
+    $product_id = $item->get_product_id();
+    $artist_id = get_post_meta($product_id, '_artist_merchant_id', true);
+    if (!$artist_id) continue;
+
+    $line_total = (float) $item->get_total();
+
+    if (!isset($artist_groups[$artist_id])) {
+      $artist_groups[$artist_id] = 0;
+    }
+
+    $artist_groups[$artist_id] += $line_total;
+  }
+
+  $currency = $order->get_currency();
+  $purchase_units = [];
+
+  foreach ($artist_groups as $artist_merchant_id => $amount) {
+
+    $platform_fee = round(($amount * PLATFORM_COMMISSION_PERCENT) / 100, 2);
+    $artist_amount = round($amount - $platform_fee, 2);
+
+    $purchase_units[] = [
+      'amount' => [
+        'currency_code' => $currency,
+        'value' => number_format($amount, 2, '.', '')
+      ],
+      'payee' => [
+        'merchant_id' => $artist_merchant_id
+      ],
+      'payment_instruction' => [
+        'disbursement_mode' => 'INSTANT',
+        'platform_fees' => [[
+          'amount' => [
+            'currency_code' => $currency,
+            'value' => number_format($platform_fee, 2, '.', '')
+          ],
+          'payee' => [
+            'merchant_id' => PLATFORM_MERCHANT_ID
+          ]
+        ]]
+      ]
+    ];
+  }
+
+  return $purchase_units;
+}
+
+</script>
+
+<script>
+  /wp-content/plugins/artist-earnings-dashboard/artist-earnings-dashboard.php
+
+<?php
+/*
+Plugin Name: Artist Earnings Dashboard
+Description: Displays earnings for artists in WooCommerce marketplace
+Version: 1.0
+*/
+
+if (!defined('ABSPATH')) exit;
+
+/**
+ * SETTINGS
+ */
+define('PLATFORM_COMMISSION_PERCENT', 15);
+
+/**
+ * ADD MENU ITEM TO MY ACCOUNT
+ */
+add_filter('woocommerce_account_menu_items', function ($items) {
+  $items['artist-earnings'] = 'Earnings';
+  return $items;
+});
+
+/**
+ * REGISTER ENDPOINT
+ */
+add_action('init', function () {
+  add_rewrite_endpoint('artist-earnings', EP_ROOT | EP_PAGES);
+});
+
+/**
+ * ENDPOINT CONTENT
+ */
+add_action('woocommerce_account_artist-earnings_endpoint', function () {
+
+  if (!is_user_logged_in()) return;
+
+  $user_id = get_current_user_id();
+  $merchant_id = get_user_meta($user_id, 'paypal_merchant_id', true);
+
+  if (!$merchant_id) {
+    echo '<p>You have not connected PayPal yet.</p>';
+    return;
+  }
+
+  $orders = wc_get_orders([
+    'status' => 'completed',
+    'limit' => -1
+  ]);
+
+  $total_gross = 0;
+  $total_fee = 0;
+  $total_net = 0;
+
+  echo '<h3>Your Earnings</h3>';
+  echo '<table style="width:100%;border-collapse:collapse">';
+  echo '<tr>
+          <th align="left">Order</th>
+          <th align="left">Artwork</th>
+          <th align="right">Gross</th>
+          <th align="right">Fee</th>
+          <th align="right">Net</th>
+          <th align="left">Date</th>
+        </tr>';
+
+  foreach ($orders as $order) {
+    foreach ($order->get_items() as $item) {
+
+      $product_id = $item->get_product_id();
+      $artist_mid = get_post_meta($product_id, '_artist_merchant_id', true);
+
+      if ($artist_mid !== $merchant_id) continue;
+
+      $gross = (float) $item->get_total();
+      $fee = round(($gross * PLATFORM_COMMISSION_PERCENT) / 100, 2);
+      $net = $gross - $fee;
+
+      $total_gross += $gross;
+      $total_fee += $fee;
+      $total_net += $net;
+
+      echo '<tr>
+              <td>#'.$order->get_id().'</td>
+              <td>'.$item->get_name().'</td>
+              <td align="right">$'.number_format($gross,2).'</td>
+              <td align="right">$'.number_format($fee,2).'</td>
+              <td align="right">$'.number_format($net,2).'</td>
+              <td>'.$order->get_date_completed()->date('Y-m-d').'</td>
+            </tr>';
+    }
+  }
+
+  echo '</table>';
+
+  echo '<hr>';
+  echo '<p><strong>Total Gross:</strong> $'.number_format($total_gross,2).'</p>';
+  echo '<p><strong>Total Fees:</strong> $'.number_format($total_fee,2).'</p>';
+  echo '<p><strong>Total Paid to You:</strong> $'.number_format($total_net,2).'</p>';
+});
+
+/wp-content/plugins/marketplace-analytics/marketplace-analytics.php
+
+
+</script>
+</body>
+</html>
+
+</head>
+<body>
+ 
+
+</section>
+</main>
+
+
+<footer>
+  <img src="file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/01126.jpg" alt="Flowers of the Okanagan" class="footer-image" 
+<div class="header-text">
+</div>
+<div class="muted"></div>
+<div class="muted"></div>
+</footer>
+
+
+</div>
+
+</body>
+</html>

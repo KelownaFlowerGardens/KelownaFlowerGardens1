@@ -1,0 +1,843 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flower Society</title>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+</body>
+  </head>
+  <body>
+  <h1>Kelowna Flower Gardens'</h1>
+  <p>Kelowna's Flower Garden Club</p> 
+  <style>
+
+
+:root{
+--bg: ##F68686;/* pink */
+--card: #0b1220; /* card bg */
+--muted: #94a3b8; /* muted text */
+--accent: #F695B5; /* coral accent */
+--accent-2: #FDD7D7; /* cream accent */
+--glass: rgba(255,255,255,0.04);
+--radius: 14px;
+--max-width: 1100px;
+--gap: 1.25rem;
+--shadow: 0 6px 20px rgba(2,6,23,0.6);
+--fw-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+margin:0;
+font-family:var(--fw-sans);
+background:linear-gradient(180deg,var(--bg) 0%, white 100%);
+color: #F68686;
+line-height:1.15;
+padding:2rem 1rem;
+}
+
+
+.wrap{
+max-width:var(--max-width);
+margin:0 auto;
+display:flex;
+flex-direction:column;
+gap:var(--gap);
+}
+
+
+header{
+position:center;
+width:100vw;
+left:50%;
+right:50%;
+margin-left:-50vw;
+margin-right:-50vw;
+overflow:hidden;
+height:50vh; /* cropped to about 1/2 screen height */
+}
+
+header img.hero-header {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  background-image: file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/0011_26.jpg('0011_26.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+@media (max-width: 768px) {
+  .hero-header {
+    height: 250px;
+    padding: 50px 15px;
+  }
+
+  .hero-header h1 {
+    font-size: 24px;
+  }
+
+  .hero-header p {
+    font-size: 16px;
+  }
+}
+
+.header-text{
+text-align:center;
+color:#F68686;
+}
+
+
+.header-text h1{
+font-size:clamp(1.8rem,4vw,3rem);
+margin:0;
+position;center
+}
+
+
+.header-text p{
+font-size:1.1rem;
+color:var(--muted);
+position;center
+}
+
+nav{display:flex;gap:1rem;align-items:center;justify-content:center;margin-top:1rem;align-items:center}
+nav a{
+color:var(--muted);
+text-decoration:none;
+padding:.35rem .6rem;
+border-radius:8px;
+font-weight:600;
+font-size:.95rem;
+}
+nav a:hover{color:var(--accent);background:rgba(124,58,237,0.06)}
+
+
+main{margin-top:2rem;}
+
+
+footer{padding:1rem 0;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+.centered {
+text-align: center; /* Centers text horizontally */
+</style>
+</style>
+</head>
+<body>
+<div class="wrap">
+
+
+<header>
+<img src="file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/01126.jpg" alt=centered "Flowers of the Okanagan" class="header-image" 
+<div class="header-text">
+<h1>Welcome to the Flower Gardens of the Okanagan</h1>
+<p></p>
+</div>
+
+<nav>
+<div class="topnav" id="myTopnav">
+  <div class="dropdown">
+  <button class="dropbtn" href="Home.html" class="active">Home</button>
+    <div class="dropdown-content">
+            <a href="Home.html">Home</a>
+         <a href="History.html"></a>
+                    </div>
+                  </div>
+             
+<div class="dropdown">
+    <button class="dropbtn" href="GardensDesign.html" class="active">Garden Design</button>
+    <div class="dropdown-content">
+            <a href="GardenDesign.html">Garden Design</a>
+         <a href="Gardens of Kelowna.html">Gardens of Kelowna</a>
+      <a href="climate.html">Climate</a>
+            <a href="Roots.html">Roots</a>
+                    </div>
+                  </div>
+<div class="dropdown">
+    <button class="dropbtn" href="About.html" class="active">About
+         <div class="dropdown-content">
+         <a href="About.html">About</a>
+      <a href="Boardmembers.html"></a>
+      <a href=".html"></a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+<button class="dropbtn" href="Regional Species.html" class="active">Regional Species</button>
+    <div class="dropdown-content">
+                 <a href="Regional Species.html">Regional Species</a>
+               <a href="History.html">History</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+  <button class="dropbtn" href="Awards.html" class="active">Awards</button>
+   <div class="dropdown-content">
+  <a href="Awards.html" class="active">Awards</a>
+</div>
+</div>
+
+ <div class="dropdown-content">
+    <button class="dropbtn" href="Resources.html" class="active">Resources</button>
+          <div class="dropdown-content">
+         <a href="Resources.html">Resources</a>
+         <a href="https://www.kew.org/kew-gardens">Kew Royal Botanical Gardens</a>
+          <a href="">Index</a>
+  </div>
+</div>
+
+<div class="dropdown">
+    <button class="dropbtn" href="Roses.html" class="active">Roses</button>
+  <div class="dropdown-content">
+            <a href="Roses.html">Roses</a>
+      <a href="https://rose.org/">American Rose Society</a>
+      <a href="https://canadianrosesociety.org/">Canadian Rose Society</a>
+    </div>
+  </div>
+
+ <div class="dropdown">
+   <button class="dropbtn" href="Valley Art.html" class="active">Valley Art</button>
+     <div class="dropdown-content">
+<a href="Valley Art.html">Valley Art</a>
+  </div>
+</div>
+
+   <div class="dropdown">
+     <button class="dropbtn" href="Bridal Bouquet.html" class="active">Bridal Bouquet</button>
+      <div class="dropdown-content">
+<a href="Bridal Bouquets.html">Bridal Bouquets</a>
+ </div>
+</div>
+
+   <div class="dropdown">
+<button class="dropbtn" href="Calendar".html" class="active">Calendar</button>
+   <div class="dropdown-content">
+<a href="Calendar.html" class="active">Calendar</a>
+</div>
+</div>
+  
+  <div class="dropdown">
+    <button class="dropbtn" href="Members.html" class="active">Members</button>
+        <div class="dropdown-content">
+  <a href="Members.html" class="active">Members</a>
+      <a href="Contact.html" class="active">Contact</a>
+      <a href="About.html">About</a>
+      <a href="Resources.html">Resources</a>
+    </div>
+  </div>
+
+</div>
+<style>
+/* Add a white background color to the top navigation */
+.topnav {
+  background-color: #white;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: white;
+  color: #white;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: white;
+  color: #F68686;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #F68686;
+  padding: 14px 16px;
+  background-color: white;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #F68686;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a white background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+  color: white;
+}
+
+/* Add a background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #F68686;
+  color: white;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+</nav>
+
+<style>
+.btn-group button {
+    background-color: white; /* White background */
+  border: 1px solid white; /* white border */
+  color: #F68686; /* coral text */
+  padding: 15px 16px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  font-size: 16px;
+    color: #white;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+    font-family:var(--fw-sans)
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: white;
+  color: #F68686; /* text */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 16px;
+    color: #white;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-family:var(--fw-sans)
+}</style>
+
+<!-- Five buttons in a group -->
+<div class="btn-group" style="width:100%">
+  <button style="width:20%"><a href="#Hybrid Teas" class="button">Hybird Teas</a> </button>
+  <button style="width:20%"><a href="#Floribundas" class="button">Floribundas</a></button>
+  <button style="width:20%"><a href="#Grandifloras" class="button">Grandifloras</a></button>
+    <button style="width:20%"><a href="#Climbers" class="button">Climbers</a></button>
+      <button style="width:20%"><a href="#Miniatures" class="button">Miniatures</a></button>
+</div>
+<style>.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+
+}
+
+.button-group a,
+.button-group button {
+  background-color: white;
+  color: #F68686;
+  padding: 15px 16px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+.button-group a:hover,
+.button-group button:hover {
+  background-color: white;
+}</style>
+
+
+<main>
+<section>
+          <h2 id="features">The Story of Roses</h2>
+         <p> Original cultivation of European roses predates Christ and began with the genus; Gallica (gallica officinalis) which is referred to as "the apothecary's rose". In Egyptian history there are recordings of Mediterranean plants that were cultivated that include the genus R. damascena, the Damask rose. These and other varieties of the sort are found in Greece and throughout the Roman Empire during that period. At around 100 A.D. Alba roses descended from the Gallica genus, crossing with the Dog rose (R. canina) and rising in popularity throughout the Renaissance. Many Italian paintings include the R. Alba. During the period around 1500, the Centifolia Rose was produced by Dutch hybridizers. R. centifolia are known as the "Cabbage Rose". In 1696 Moss roses derived from a cross of the Damask and China roses. As European development grew, as did China roses (Rosa Chimensis) in the 18th century. The first tea rose (R. odorata) debuted shortly after. The new European class of roses was difficult to breed the cross between the China roses and Damask, yet the Bourbon roses came to be. Similar are the Hybrid Bourbons that only bloom once annually. Hybrid Perpetuals are intercrossed China, Bourbans, Portlands (which is a cross of China and Teas) and Tea roses. These began growing in the mid 1800's and developed into more than 4000 varieties. In the United States, in the early 1800's, the first hybrid rose to be bred from the Musks rose (R. moschata) crossed with the Tea roses, named the Noisette. Hybrid Perpetuals and Tea roses were crossed in 1860's creating the classification of Hybrid Teas. In the turn of the 20th century, yellow roses grew in the strain R. foetida, the new class of Pernetiana roses. But this class was short lived as it fell into the same category as Hybrid Teas in the 1930's. Miniature roses (R. chimensis minima) soared in popularity in the early 1800's in France, then disappeared and reappeared in Switzerland in the 1920's. Hybrid Musks were introduced in the 1920's which were versions of the Noisettes, crossed with Rosa multiflora ramblers. Rosa multiflora crossed with Tea and China roses created Polyanthas. A French rose that was made the same time as the Hybrid Teas. Hybrid Polyanthas are also known as Floribundas. The word translates to "flowers in abundance" as it has many blooms. In the 1950's, Grandiflora's were classified as a intermediate between Hybrid Teas and Floribundas as they're born in clusters, like Floribundas but grow tall like Hybrids. Shrub roses have always had a roll throughout history and contributed to the development of modern roses. These vary from native species to Sweetbrierbs (R. rubiginosa), Rugosas (R. rugosa), Nevada, Chestnut (R. roxbughii) Austrian Copper (R. foetida), and Kordesii roses. 
+          <a href=" https://harknessroses1879.com/"> Harkness Roses </a> , <a href="https://rose.org/"> American Rose Society </a>, <a href="https://canadianrosesociety.org/"> Canadian Rose Society </a> 
+         </p>
+
+<h2></h2>
+  <p> <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chart Table</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      text-align: center;
+      padding: 8px;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    .bar {
+      height: 20px;
+      background-color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section id="Hybrid Teas">
+  <h1>Hybrid Teas</h1>
+  <p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Color</th>
+        <th>Flower Description</th>
+        <th>Foliage and growth Habits</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>First Love (1951)</td>
+        <td>Rose to Pink</td>
+        <td>6.35 - 8.9 cms Double (20-30 petals), slight fragrence</td>
+        <td> Leathery, light green, very vigorous, disease resistant</td>
+        <td> <img src="C:\Users\geosi\OneDrive\Documents\Code\Flowers\Images\Roses\firstlove.jpg" alt="Centered Image" style="display: block; margin: auto;" width="100" height="100"> </img></td>
+      </tr>
+      <tr>
+        <td>Confidence (1951)</td>
+        <td>Light to Yellow</td>
+         <td>Large Double (28 - 38 petals), moderate fragrence</td>
+        <td> Dark, leathery, vigorous, bushy</td>
+        <td> <img src="C:\Users\geosi\OneDrive\Documents\Code\Flowers\Images\Roses\confidence.jpg" alt="Centered Image" style="display: block; margin: auto;" width="100" height="100"> </img></td>
+      <tr>
+        <td>Red Masterpeice (1974)</td>
+        <td>Dark Red</td>
+         <td>15.25 cm Double (35-40 petals), heavy fragrence</td>
+        <td> Dark, leathery, mildews, profuse blooming</td>
+        <td> <img src="C:\Users\geosi\OneDrive\Documents\Code\Flowers\Images\Roses\redmasterpeice.jpg" alt="Centered Image" style="display: block; margin: auto;" width="100" height="100"> </img></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</p>
+</section>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chart Table</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      text-align: center;
+      padding: 8px;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    .bar {
+      height: 20px;
+      background-color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+
+ 
+    <section id="Floribundas">
+  <h1>Floribundas</h1>
+  <p>
+  <table>
+    <thead>
+      <tr>
+         <th>Name</th>
+        <th>Color</th>
+        <th>Flower Description</th>
+        <th>Foliage and growth Habits</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+  <td>Bon Bon (1974)</td>
+        <td>Deep rose- white</td>
+         <td>8.89 cm Double (25 petals), moderate fragrence</td>
+        <td> Glossy, grey-green; very prolific blooming</td>
+        <td> <img src="C:\Users\geosi\OneDrive\Documents\Code\Flowers\Images\Roses\bonbon.jpg" alt="Centered Image" style="display: block; margin: auto;" width="100" height="100"> </img></td>
+      <tr>
+       <td>Garnet (1951)</td>
+        <td>Garnet-red/yellow</td>
+         <td> 2.5-5.1 cm Double (50 petals), slight fragrence, long lasting flowers</td>
+        <td> Dark, leathery, susceptible to mildews</td>
+        <td> <img src="C:\Users\geosi\OneDrive\Documents\Code\Flowers\Images\Roses\garnet.jpg" alt="Centered Image" style="display: block; margin: auto;" width="100" height="100"> </img></td>
+  <tr>
+       <td>Vogue (1951)</td>
+        <td>Cherry Coral</td>
+         <td>8.89 - 10.25 cm Double (30-35 petals), moderate fragerance</td>
+        <td> Glossy, leathery; vigorous, upright, bushy</td>
+        <td> <img src="C:\Users\geosi\OneDrive\Documents\Code\Flowers\Images\Roses\vogue.jpg" alt="Centered Image" style="display: block; margin: auto;" width="100" height="100"> </img></td>
+      </tr>
+    </tbody>
+  </table>
+</p>
+ </section>
+
+</body>
+</html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chart Table</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      text-align: center;
+      padding: 8px;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    .bar {
+      height: 20px;
+      background-color: #4CAF50;
+    }
+  </style>
+</head>
+<body> 
+  <h1>Grandifloras</h1>
+  <table>
+    <thead>
+      <tr> <th>Name</th>
+        <th>Color</th>
+        <th>Flower Description</th>
+        <th>Foliage and growth Habits</th>
+        <th>Image</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+         <td>Arizona (1975)</td>
+        <td>Golden copper</td>
+         <td>10.25 cm Double (35-40 petals), moderate fragrence</td>
+        <td> Dark, semi-glossy, tall</td>
+        <td> <img src="C:\Users\geosi\OneDrive\Documents\Code\Flowers\Images\Roses\arizona.jpg" alt="Centered Image" style="display: block; margin: auto;" width="100" height="100"> </img></td>
+      </tr>
+      <tr>
+       <td>Mount Shasta (1963)</td>
+        <td>White</td>
+         <td>10.25 - 12.6 cm cm Double (20-26 petals), moderate fragrence</td>
+        <td> Leathery, semi-glossy, good for cool climates</td>
+        <td> <img src="C:\Users\geosi\OneDrive\Documents\Code\Flowers\Images\Roses\mountshasta.jpg" alt="Centered Image" style="display: block; margin: auto;" width="100" height="100"> </img></td>
+      </tr>
+      <tr>
+       <td>Queen Elizabeth (1954)</td>
+        <td>Carmine-rose  to dawn-pink</td>
+         <td>8.89 - 10.25 cm Double (45-55 petals), moderate fragrence</td>
+        <td> Glossy, vigorous, prolific</td>
+        <td> <img src="C:\Users\geosi\OneDrive\Documents\Code\Flowers\Images\Roses\queenelizabeth.jpg" alt="Centered Image" style="display: block; margin: auto;" width="100" height="100"> </img></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chart Table</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      text-align: center;
+      padding: 8px;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    .bar {
+      height: 20px;
+      background-color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+
+    <section id="Climbers">
+  <h1>Climbers</h1>
+  <p>
+  <table>
+    <thead>
+      <tr>
+         <th>Name</th>
+        <th>Color</th>
+        <th>Flower Description</th>
+        <th>Foliage and growth Habits</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Blossomtime (1951)</td>
+        <td>Pink</td>
+         <td>10.25 cm Double (35-40 petals), heavy fragrence</td>
+        <td> Dark, large-flowered climber, low-growing</td>
+        <td> <img src="C:\Users\geosi\OneDrive\Documents\Code\Flowers\Images\Roses\blossomtime.jpg" alt="Centered Image" style="display: block; margin: auto;" width="100" height="100"> </img></td>
+      </tr>
+      <tr>
+        <td>Coral Satin (1960)</td>
+        <td>Coral</td>
+         <td>8.89 - 10.25 cm Double (25 petals), moderate fragrence</td>
+        <td> Glossy, leathery, Large-flowered climber, profuse bloom</td>
+        <td> <img src="C:\Users\geosi\OneDrive\Documents\Code\Flowers\Images\Roses\coralsatin.jpg" alt="Centered Image" style="display: block; margin: auto;" width="100" height="100"> </img></td>
+      </tr>
+      <tr>
+        <td>Golden Showers (1956)</td>
+        <td>Daffodil-yellow</td>
+         <td>12.6 cm Double (20-35 petals), moderate fragrence</td>
+        <td> Dark, glossy, Large-flowered climber;long almost thornless stems</td>
+        <td> <img src="C:\Users\geosi\OneDrive\Documents\Code\Flowers\Images\Roses\goldenshowers.jpg" alt="Centered Image" style="display: block; margin: auto;" width="100" height="100"> </img></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</p>
+</section>
+</html> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chart Table</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      text-align: center;
+      padding: 8px;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    .bar {
+      height: 20px;
+      background-color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+
+    <section id="Miniatures">
+      <h1>Miniatures</h1>
+  <p>
+  <table>
+    <thead>
+      <tr>
+         <th>Name</th>
+        <th>Color</th>
+        <th>Flower Description</th>
+        <th>Foliage and growth Habits</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+       <td>Beauty Secret (1965)</td>
+        <td>Cardinal Red</td>
+         <td> 2.5 - 3.9 cm Double, heavy fragrence</td>
+        <td> Glossy, leathery, abundant bloom</td>
+        <td> <img src="C:\Users\geosi\OneDrive\Documents\Code\Flowers\Images\Roses\beautysecret.jpg" alt="Centered Image" style="display: block; margin: auto;" width="100" height="100"> </img></td>
+      </tr>
+      <tr>
+        <td>Fire Princess (1969)</td>
+        <td>Orange-red</td>
+         <td>4.5 cm Double, no fragrence</td>
+        <td> Glossy, leathery, vigorous, bushy</td>
+        <td> <img src="C:\Users\geosi\OneDrive\Documents\Code\Flowers\Images\Roses\Fireprincess.jpg" alt="Centered Image" style="display: block; margin: auto;" width="100" height="100"> </img></td>
+      </tr>
+      <tr>
+        <td>Judy Fisher (1968)</td>
+        <td>Rose-pink</td>
+         <td>3.9 cm Double, no fragrence</td>
+        <td> Glossy, leathery, Large-flowered climber, profuse bloom</td>
+        <td> <img src="C:\Users\geosi\OneDrive\Documents\Code\Flowers\Images\Roses\judyfisher.jpg" alt="Centered Image" style="display: block; margin: auto;" width="100" height="100"> </img></td>
+      </tr>
+      <tr>
+        <td>Lavendar Lace (1968)</td>
+        <td>Lavendar</td>
+         <td>3.9 cm Double, moderate fragrence</td>
+        <td> Glossy, vigorous and bushy</td>
+        <td> <img src="C:\Users\geosi\OneDrive\Documents\Code\Flowers\Images\Roses\lavendarlace.jpg" alt="Centered Image" style="display: block; margin: auto;" width="100" height="100"> </img></td>
+      </tr>
+      <tr>
+        <td>Over the Rainbow (1974)</td>
+        <td>Red and yellow</td>
+         <td>4.5 cm Double, no fragrence</td>
+        <td> Leathery, medium green; abundant, continuous bloom</td>
+        <td> <img src="C:\Users\geosi\OneDrive\Documents\Code\Flowers\Images\Roses\overtherainbow.jpg" alt="Centered Image" style="display: block; margin: auto;" width="100" height="100"> </img></td>
+      </tr>
+      <tr>
+        <td>Windy City (1974)</td>
+        <td>Pink</td>
+         <td>2.5 cm cm Double, slight fragrence, long lasting</td>
+        <td> Bronzy; disease resistant</td>
+        <td> <img src="C:\Users\geosi\OneDrive\Documents\Code\Flowers\Images\Roses\windycity.jpg" alt="Centered Image" style="display: block; margin: auto;" width="100" height="100"> </img></td>
+    </tbody>
+  </table>
+</body>
+</p>
+</section>
+</main>
+</html> 
+ </p>
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+ 
+
+</section>
+</main>
+
+<style>
+div.scroll-container img {
+  padding: 10px;</style>
+  
+<div class="scroll-container">
+    <img src="C:\Users\geosi\OneDrive\Documents\Code\Flowers\Images\Roses\9524E.jpg" style="display: block; margin: auto;" width="550" height="350">
+    <h5></h5>
+<style> div.scroll-container {
+  background-color: #FDD7D7;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+</style>
+</div>
+
+
+<footer>
+  <img src="file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/01126.jpg" alt="Flowers of the Okanagan" class="footer-image" 
+<div class="header-text">
+</div>
+<div class="muted"></div>
+<div class="muted"></div>
+</footer>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+Shop 
+
+2️⃣ PAYPAL MARKETPLACE — HOW IT IS WIRED (WORDPRESS)
+
+You are building a PayPal Commerce Platform marketplace.
+
+✔ REQUIRED PAYPAL FEATURES
+
+In PayPal Developer Dashboard:
+
+Commerce Platform
+
+Partner Referrals
+
+Disbursements
+
+Webhooks
+
+5️⃣ SPLIT PAYMENT (AUTOMATIC PAYOUTS)
+✔ THIS IS THE KEY PART
+
+WooCommerce + PayPal supports PayPal Commerce Platform split payments.
+
+Each product must include:
+
+Seller PayPal Merchant ID
+
+Platform fee %
+
+Payment Flow:
+
+Buyer pays → PayPal splits →
+✔ Artist paid instantly
+✔ Platform keeps fee
+
+{
+  "purchase_units": [{
+    "amount": { "value": "100.00" },
+    "payee": { "merchant_id": "ARTIST_MERCHANT_ID" },
+    "payment_instruction": {
+      "disbursement_mode": "INSTANT",
+      "platform_fees": [{
+        "amount": { "value": "15.00" },
+        "payee": { "merchant_id": "PLATFORM_MERCHANT_ID" }
+      }]
+    }
+  }]
+}
+
+
+8️⃣ PAYPAL WEBHOOKS (REQUIRED)
+
+Create webhooks for:
+
+PAYMENT.CAPTURE.COMPLETED
+
+PAYMENT.CAPTURE.DENIED
+
+CHECKOUT.ORDER.APPROVED
+
+Used to:
+
+Confirm payment
+
+Release files
+
+Resolve disputes
+
+⚠️ PAYPAL REQUIREMENTS (DO FIRST)
+
+In PayPal Developer Dashboard:
+
+Enable Commerce Platform
+
+Enable Partner Referrals
+
+Add Return URL
+
+Add Webhook URL
+
+
+WordPress Shortcode: paste to activate: [artwork_submission_form]
+
+
+To finish the marketplace, the next automation is:
+
+➡️ On admin approval:
+
+Create WooCommerce product
+
+Assign artist PayPal merchant ID
+
+Enable PayPal split payments
+
+Lock file until payment
+
+
+5️⃣ HOW TO TEST (DO THIS)
+
+1️⃣ Enable PayPal sandbox in WooCommerce
+2️⃣ Use sandbox artist account
+3️⃣ Place a test order
+4️⃣ Check:
+
+PayPal transaction details
+
+Split breakdown
+
+WooCommerce order notes
+
+
+
+3️⃣ IMPORTANT WOOCOMMERCE SETTINGS (DO THIS)
+
+Go to:
+
+WooCommerce → Settings → Products → Downloadable products
+
+
+2️⃣ FLUSH PERMALINKS (IMPORTANT)
+
+After activating the plugin:
+
+WordPress → Settings → Permalinks → Save
+
+
+(This registers the new endpoint.)

@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title></title>
+  <link rel="stylesheet" href="style2.css" />
+  <body>
+</body>
+  </head>
+  <body>
+  <h1>Kelowna Flower Garden's</h1>
+  <p>Kelowna's Flower Garden Club</p> 
+  <style>
+
+
+:root{
+--bg: ##F68686;/* pink */
+--card: #0b1220; /* card bg */
+--muted: #94a3b8; /* muted text */
+--accent: #F695B5; /* coral accent */
+--accent-2: #FDD7D7; /* cream accent */
+--glass: rgba(255,255,255,0.04);
+--radius: 14px;
+--max-width: 1100px;
+--gap: 1.25rem;
+--shadow: 0 6px 20px rgba(2,6,23,0.6);
+--fw-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+margin:0;
+font-family:var(--fw-sans);
+background:linear-gradient(180deg,var(--bg) 0%, white 100%);
+color: #F68686;
+line-height:1.15;
+padding:2rem 1rem;
+}
+
+
+.wrap{
+max-width:var(--max-width);
+margin:0 auto;
+display:flex;
+flex-direction:column;
+gap:var(--gap);
+}
+
+
+header{
+position:center;
+width:100vw;
+left:50%;
+right:50%;
+margin-left:-50vw;
+margin-right:-50vw;
+overflow:hidden;
+height:50vh; /* cropped to about 1/2 screen height */
+}
+
+header img.hero-header {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  background-image: file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/0011_26.jpg('0011_26.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+@media (max-width: 768px) {
+  .hero-header {
+    height: 250px;
+    padding: 50px 15px;
+  }
+
+  .hero-header h1 {
+    font-size: 24px;
+  }
+
+  .hero-header p {
+    font-size: 16px;
+  }
+}
+
+.header-text{
+text-align:center;
+color:#F68686;
+}
+
+
+.header-text h1{
+font-size:clamp(1.8rem,4vw,3rem);
+margin:0;
+position;center
+}
+
+
+.header-text p{
+font-size:1.1rem;
+color:var(--muted);
+position;center
+}
+
+nav{display:flex;gap:1rem;align-items:center;justify-content:center;margin-top:1rem;align-items:center}
+nav a{
+color:var(--muted);
+text-decoration:none;
+padding:.35rem .6rem;
+border-radius:8px;
+font-weight:600;
+font-size:.95rem;
+}
+nav a:hover{color:var(--accent);background:rgba(124,58,237,0.06)}
+
+
+main{margin-top:2rem;}
+
+
+footer{padding:1rem 0;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+.centered {
+text-align: center; /* Centers text horizontally */
+</style>
+</style>
+</head>
+<body>
+<div class="wrap">
+
+
+<header>
+<img src="file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/01126.jpg" alt=centered "Flowers of the Okanagan" class="header-image" 
+<div class="header-text">
+<h1>Welcome to the Flower Gardens of the Okanagan</h1>
+<p></p>
+</div>
+
+<nav>
+<div class="topnav" id="myTopnav">
+  <div class="dropdown">
+  <button class="dropbtn" href="Home.html" class="active">Home</button>
+    <div class="dropdown-content">
+            <a href="Home.html">Home</a>
+         <a href="History.html"></a>
+                    </div>
+                  </div>
+             
+<div class="dropdown">
+    <button class="dropbtn" href="GardensDesign.html" class="active">Garden Design</button>
+    <div class="dropdown-content">
+            <a href="GardenDesign.html">Garden Design</a>
+         <a href="Gardens of Kelowna.html">Gardens of Kelowna</a>
+      <a href="climate.html">Climate</a>
+            <a href="Roots.html">Roots</a>
+                    </div>
+                  </div>
+<div class="dropdown">
+    <button class="dropbtn" href="About.html" class="active">About
+         <div class="dropdown-content">
+         <a href="About.html">About</a>
+      <a href="Boardmembers.html"></a>
+      <a href=".html"></a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+<button class="dropbtn" href="Regional Species.html" class="active">Regional Species</button>
+    <div class="dropdown-content">
+                 <a href="Regional Species.html">Regional Species</a>
+               <a href="History.html">History</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+  <button class="dropbtn" href="Awards.html" class="active">Awards</button>
+   <div class="dropdown-content">
+  <a href="Awards.html" class="active">Awards</a>
+</div>
+</div>
+
+ <div class="dropdown-content">
+    <button class="dropbtn" href="Resources.html" class="active">Resources</button>
+          <div class="dropdown-content">
+         <a href="Resources.html">Resources</a>
+         <a href="https://www.kew.org/kew-gardens">Kew Royal Botanical Gardens</a>
+          <a href="">Index</a>
+  </div>
+</div>
+
+<div class="dropdown">
+    <button class="dropbtn" href="Roses.html" class="active">Roses</button>
+  <div class="dropdown-content">
+            <a href="Roses.html">Roses</a>
+      <a href="https://rose.org/">American Rose Society</a>
+      <a href="https://canadianrosesociety.org/">Canadian Rose Society</a>
+    </div>
+  </div>
+
+ <div class="dropdown">
+   <button class="dropbtn" href="Valley Art.html" class="active">Valley Art</button>
+     <div class="dropdown-content">
+<a href="Valley Art.html">Valley Art</a>
+  </div>
+</div>
+
+   <div class="dropdown">
+     <button class="dropbtn" href="Bridal Bouquet.html" class="active">Bridal Bouquet</button>
+      <div class="dropdown-content">
+<a href="Bridal Bouquets.html">Bridal Bouquets</a>
+ </div>
+</div>
+
+   <div class="dropdown">
+<button class="dropbtn" href="Calendar".html" class="active">Calendar</button>
+   <div class="dropdown-content">
+<a href="Calendar.html" class="active">Calendar</a>
+</div>
+</div>
+  
+  <div class="dropdown">
+    <button class="dropbtn" href="Members.html" class="active">Members</button>
+        <div class="dropdown-content">
+  <a href="Members.html" class="active">Members</a>
+      <a href="Contact.html" class="active">Contact</a>
+      <a href="About.html">About</a>
+      <a href="Resources.html">Resources</a>
+    </div>
+  </div>
+
+</div>
+<style>
+/* Add a white background color to the top navigation */
+.topnav {
+  background-color: #white;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: white;
+  color: #white;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: white;
+  color: #F68686;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #F68686;
+  padding: 14px 16px;
+  background-color: white;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #F68686;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a white background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+  color: white;
+}
+
+/* Add a background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #F68686;
+  color: white;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: right;
+  }
+}
+</style>
+</nav>
+
+<main>
+<section>
+          <h id="features"></h>
+     
+<H2>Index</H2>
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+
+<title>Sidebar Menu</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<p> <h2>The Language of Roses</h2></p>
+<p>This glossary is intended to acquaint the beginning gardener who wants to learn more about roses through the terminology involved</p>
+
+<p>Bareroot. Roses dug from commercial growing fields in late winter and early spring (wrapped to preserve moisture), and shipped to retail nurseries or directly to mail-order customers.</p>
+
+<p>Basal break. New cane or stem arising from the budhead tissue or bud at the base of an old cane.</p>
+
+<p>Basal growth. Expanded ring of tissue at the base of a cane where it connects with the budhead or another cane.</p>
+
+<p>Break. Any new growth from the buds.</p>
+
+<p>Bud. Has several meanings to the rosarian. Refers to the unopened flower. Or the eyes on the cane at the nodes, base of the cane, or the budhead. The origin of all new replacement growth.</p>
+
+<p>Budding. Process of propagating a new rose plant by taking a growth eye and grafting it to understock.</p>
+
+<p>Budhead. Enlarged expanded growth from a single bud just above the crown where a hybrid or a different variety of rose was grafted.</p>
+
+<p>Bud union. A suture line where the hybrid budhead joins the rootstock.</p>
+
+<p>Canes. Main stems of the rose plant. They bear the leaves, flowers, and fruits (hips).</p>
+
+<p>Candelabra. A strong, dominant cane with accelerated growth originating from the bud union, exploding into a candelabra of blooms.</p>
+
+<p>Clippers. Short hand tool that cuts from both sides with either curved or straight blades.</p>
+
+<p>Corky layer. Tissue which extends beyond the skin of a cane forming a thick, spongy layer over the outside of the stem.</p>
+
+<p>Crown. The point where roots and stems join. Or an expanded and enlarged area which is more stem in character than root.</p>
+
+<p>Cultivar. A term designating a plant that has been horticulturally derived in cultivation (by mutation, or hybridizing, or a breeding program). Distinguished from a natural variety that occurs in the wild or is grown in the garden.</p>
+
+<p>Disbudding. Thinning out flower buds to develop better quality in the remaining blooms.</p>
+
+<p>Dog-leg. A cane which grows outward, then upward in a deformed position.</p>
+
+<p>Dormant. The period when a plant rests and its growth processes greatly slow down. Begins as days grow shorter and temperatures begin to drop. Period ends when the plant is exposed to higher temperatures for an extended number of hours.</p>
+
+<p>Forked terminal. The end of a pruned cane having two smaller canes at its top, extending in opposite directions from one or more joints.</p>
+
+<p>Genus. A plant classification, ranking between a family and a species. Designated by Latin or Latinized and capitalized singular noun. Example: Rosa.</p>
+
+<p>Hat-rack. Dead end or stub of a cane that has been cut between buds or above stem joints.</p>
+
+<p>Hip. The fruit of the rose; a seed pod formed from pollinated flowers after the petals fade.</p>
+
+<p>Hybrid. Offspring of two plants of different species or varieties.</p>
+
+<p>Hybrid budhead. Growth where a hybrid variety has been budded to rootstock of a lesser variety, seedling, or species plant.</p>
+
+<p>Internode. Stem space between two nodes or buds. The tissue is not regenerative in this area.</p>
+
+<p>Joint. Thickened areas on canes at which buds appear and from which all replacement growth arises.</p>
+
+<p>Jointed terminal. End of a pruned cane having a smaller cane attached to it by a joint and continuing away on an angle.</p>
+
+<p>Leaf scar. A line extending around the cane and thickened just under the bud at the node of a stem.</p>
+
+<p>Lopper. Pruning shears with extended handles at least 20 inches long.</p>
+
+<p>Mulch. Any material placed on the soil to conserve soil moisture, maintain a more even temperature, and aid in weed control.</p>
+
+<p>Mutation. A change in plant gene that produces a new variety differing from the parent. Usually called a “sport.”</p>
+
+<p>Node. A joint or point where a branch, bud, or leaf meets the stem from which it develops.</p>
+
+<p>Old roses. Many species of roses and hybrids developed prior to the introduction of hybrid teas and floribundas. Quite a few are still available from specialized rose growers.</p>
+
+<p>Patented. Referring to rose varieties protected by U.S. government patent granting exclusive right for 16 years to the patent holder.</p>
+
+<p>Pesticide. A substance (most often a chemical) used to control insects and rodents.</p>
+
+<p>Plethora. Superabundance of small, undersized, low-quality buds found crowded on twigs at the top of a rose cane where careless bloom cutting has been practiced.</p>
+
+<p>Prickle. The thorn on a rose cane.</p>
+
+<p>Pruning. Cutting back or cutting off part of a rose cane for better shape and more fruitful growth.</p>
+
+<p>Replacement. A cane that grows from a bud, replacing or filling the area of old or dead canes that have been removed.</p>
+
+<p>Root connections. Root attachments to the crown or to larger roots.</p>
+
+<p>Roots. Underground part of the plant that extends from the crown.</p>
+
+<p>Rootstock. Seedling or species plant which was rooted from a cutting and on which the hybrid is budded.</p>
+
+<p>Shears. Short hand tool with one cutting blade and a hook to prevent slippage.</p>
+
+<p>Sinkage. The tendency of the rose plant to sink below the surface of the soil so that the crown, rootstock, and budhead are all below the soil’s surface.</p>
+
+<p>Species. Group of plants closely resembling each other and which interbreed freely. Designated by Latin or Latinized uncapitalized noun or adjective that follows the genus name. Rosa chinensis (species).</p>
+
+<p>Sport. See Mutation.</p>
+
+<p>Standard. Any variety of rose plant grafted to a tall main stem. Also called tree rose.</p>
+
+<p>Striations. Streaks or lines of corky tissue on old or mature canes, indicating that the blooming capacity is ended or near its end.</p>
+
+<p>Stub. Remains of a cane which has been removed, leaving basal attachment to the mother cane and a short part of the original cane.</p>
+
+<p>Sucker. Shoot or stem which arises from below the budhead, from the rootstock.</p>
+
+<p>Systemic. A pesticide that is absorbed into the system of a plant causing the plant juice to become toxic to its enemies. Often combined with plant food.</p>
+
+<p>Transverse cut. A crosswise cut made horizontal, or at right angles, to the direction of growth of a cane.</p>
+
+<p>Twig. A small stem, often many-jointed, which grows laterally to a main cane of the rosebush.</p>
+
+<p>Understock. The rose that supplies the rootstock onto which the hybrid is grafted.</p>
+
+<p>Variety. A subgroup of plants in a species (the lowest or final classification) with similar characteristics. Each variety within a species keeps.</p>
+<p>All About Roses, James K. McNair, Ortho Books, Tiffany and Company, August 1980</p> 
+</p>
+<div class="sidebar">
+  <div class="menu-item">
+   <a href="#">Web Resources</a>
+   <div class="menu-item">
+  <div class="submenu">
+    <a href="https://www.westcoastseeds.com/"> West Coast Seeds</a>
+    <a href="https://www.bylandsgardencentre.com/"> Bylands Garden Centre, </a>
+     <a href="https://www.centralokanagancommunitygardens.com"> Central Okanagan Community Gardens </a> 
+    <a href="https://www.kew.org/kew-gardens">The Kew Royal Botanical Gardens</a> 
+    <a href="https://gardensheritageandplanning.com/2024/10/18/planning-the-ideal-garden/">Planning the Ideal Garden </a>
+    <a href="https://inaturalist.ca/places/okanagan-valley-3f9403d8-d20d-4ff4-8b56-6f82a3953c05#taxon=47126">iNaturalist </a>
+     <a href="https://hcp.ca/visit/gardens/"> Horticulture Centre of the Pacific </a>
+<a href="https://butchartgardens.com/"> Butchart Gardens </a>
+ <a href="https://obwb.ca/"> Okanagan Water Basin </a>
+ <a href="https://www.niagaraparks.com/visit/nature-garden/botanical-gardens-2/">Botanical Gardens Niagara </a>
+ <a href="https://gardensheritageandplanning.com/2024/10/18/planning-the-ideal-garden/
+">Planning the ideal Garden </a></div>
+  <a href="Members.html">Members</a>
+   <a href="Index.html">Index</a>
+  <a href="ArchitectsofGardenDesign.html">Architect's of Garden Design</a>
+   <a href="Citations.html">Citations</a>
+<a href="Members.html">Members</a>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<style>
+div.scroll-container img {
+  padding: 10px;</style>
+  
+<div class="scroll-container">
+    <img src="C:\Users\geosi\OneDrive\Documents\Code\Flowers\Images\IMG_2962.jpeg" style="display: block; margin: auto;" width="550" height="350">
+    <h5></h5>
+<style> div.scroll-container {
+  background-color: #FDD7D7;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+</style>
+</div>
+
+<footer>
+  <img src="file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/01126.jpg" alt="Flowers of the Okanagan" class="footer-image" 
+<div class="header-text">
+</div>
+<div class="muted"></div>
+<div class="muted"></div>
+</footer>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,818 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flower Society</title>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+</body>
+  </head>
+  <body>
+  <h1>Kelowna Flower Garden's</h1>
+  <p>Kelowna's Flower Garden Club</p> 
+  <style>
+
+
+:root{
+--bg: ##F68686;/* pink */
+--card: #0b1220; /* card bg */
+--muted: #94a3b8; /* muted text */
+--accent: #F695B5; /* coral accent */
+--accent-2: #FDD7D7; /* cream accent */
+--glass: rgba(255,255,255,0.04);
+--radius: 14px;
+--max-width: 1100px;
+--gap: 1.25rem;
+--shadow: 0 6px 20px rgba(2,6,23,0.6);
+--fw-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+margin:0;
+font-family:var(--fw-sans);
+background:linear-gradient(180deg,var(--bg) 0%, white 100%);
+color: #F68686;
+line-height:1.15;
+padding:2rem 1rem;
+}
+
+
+.wrap{
+max-width:var(--max-width);
+margin:0 auto;
+display:flex;
+flex-direction:column;
+gap:var(--gap);
+}
+
+
+header{
+position:center;
+width:100vw;
+left:50%;
+right:50%;
+margin-left:-50vw;
+margin-right:-50vw;
+overflow:hidden;
+height:50vh; /* cropped to about 1/2 screen height */
+}
+
+header img.hero-header {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  background-image: file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/0011_26.jpg('0011_26.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+@media (max-width: 768px) {
+  .hero-header {
+    height: 250px;
+    padding: 50px 15px;
+  }
+
+  .hero-header h1 {
+    font-size: 24px;
+  }
+
+  .hero-header p {
+    font-size: 16px;
+  }
+}
+
+.header-text{
+text-align:center;
+color:#F68686;
+}
+
+
+.header-text h1{
+font-size:clamp(1.8rem,4vw,3rem);
+margin:0;
+position;center
+}
+
+
+.header-text p{
+font-size:1.1rem;
+color:var(--muted);
+position;center
+}
+
+nav{display:flex;gap:1rem;align-items:center;justify-content:center;margin-top:1rem;align-items:center}
+nav a{
+color:var(--muted);
+text-decoration:none;
+padding:.35rem .6rem;
+border-radius:8px;
+font-weight:600;
+font-size:.95rem;
+}
+nav a:hover{color:var(--accent);background:rgba(124,58,237,0.06)}
+
+
+main{margin-top:2rem;}
+
+
+footer{padding:1rem 0;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+.centered {
+text-align: center; /* Centers text horizontally */
+</style>
+</style>
+</head>
+<body>
+<div class="wrap">
+
+
+<header>
+<img src="file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/01126.jpg" alt=centered "Flowers of the Okanagan" class="header-image" 
+<div class="header-text">
+<h1>Welcome to the Flower Gardens of the Okanagan</h1>
+<p></p>
+</div>
+
+<nav>
+<div class="topnav" id="myTopnav">
+  <div class="dropdown">
+  <button class="dropbtn" href="Home.html" class="active">Home</button>
+    <div class="dropdown-content">
+            <a href="Home.html">Home</a>
+         <a href="History.html"></a>
+                    </div>
+                  </div>
+             
+<div class="dropdown">
+    <button class="dropbtn" href="GardensDesign.html" class="active">Garden Design</button>
+    <div class="dropdown-content">
+            <a href="GardenDesign.html">Garden Design</a>
+         <a href="Gardens of Kelowna.html">Gardens of Kelowna</a>
+      <a href="climate.html">Climate</a>
+            <a href="Roots.html">Roots</a>
+                    </div>
+                  </div>
+<div class="dropdown">
+    <button class="dropbtn" href="About.html" class="active">About
+         <div class="dropdown-content">
+         <a href="About.html">About</a>
+      <a href="Boardmembers.html"></a>
+      <a href=".html"></a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+<button class="dropbtn" href="Regional Species.html" class="active">Regional Species</button>
+    <div class="dropdown-content">
+                 <a href="Regional Species.html">Regional Species</a>
+               <a href="History.html">History</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+  <button class="dropbtn" href="Awards.html" class="active">Awards</button>
+   <div class="dropdown-content">
+  <a href="Awards.html" class="active">Awards</a>
+</div>
+</div>
+
+ <div class="dropdown-content">
+    <button class="dropbtn" href="Resources.html" class="active">Resources</button>
+          <div class="dropdown-content">
+         <a href="Resources.html">Resources</a>
+         <a href="https://www.kew.org/kew-gardens">Kew Royal Botanical Gardens</a>
+          <a href="">Index</a>
+  </div>
+</div>
+
+<div class="dropdown">
+    <button class="dropbtn" href="Roses.html" class="active">Roses</button>
+  <div class="dropdown-content">
+            <a href="Roses.html">Roses</a>
+      <a href="https://rose.org/">American Rose Society</a>
+      <a href="https://canadianrosesociety.org/">Canadian Rose Society</a>
+    </div>
+  </div>
+
+ <div class="dropdown">
+   <button class="dropbtn" href="Valley Art.html" class="active">Valley Art</button>
+     <div class="dropdown-content">
+<a href="Valley Art.html">Valley Art</a>
+  </div>
+</div>
+
+   <div class="dropdown">
+     <button class="dropbtn" href="Bridal Bouquet.html" class="active">Bridal Bouquet</button>
+      <div class="dropdown-content">
+<a href="Bridal Bouquets.html">Bridal Bouquets</a>
+ </div>
+</div>
+
+   <div class="dropdown">
+<button class="dropbtn" href="Calendar".html" class="active">Calendar</button>
+   <div class="dropdown-content">
+<a href="Calendar.html" class="active">Calendar</a>
+</div>
+</div>
+  
+  <div class="dropdown">
+    <button class="dropbtn" href="Members.html" class="active">Members</button>
+        <div class="dropdown-content">
+  <a href="Members.html" class="active">Members</a>
+      <a href="Contact.html" class="active">Contact</a>
+      <a href="About.html">About</a>
+      <a href="Resources.html">Resources</a>
+    </div>
+  </div>
+
+</div>
+<style>
+/* Add a white background color to the top navigation */
+.topnav {
+  background-color: #white;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: white;
+  color: #white;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: white;
+  color: #F68686;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #F68686;
+  padding: 14px 16px;
+  background-color: white;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #F68686;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a white background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+  color: white;
+}
+
+/* Add a background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #F68686;
+  color: white;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+</nav>
+
+<main>
+  <section> 
+    <body>
+       <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Layout wrapper */
+    .wrapper {
+        display: flex;
+        min-height: 100vh;
+        margin: 0;
+        position: relative;
+    }
+
+    /* Sidebar (Right) */
+    .sidebar {
+        width: 250px;
+        background: whitesmoke;
+        color: #F68686;
+        padding-top: 20px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    .sidebar a, .dropdown-btn {
+        padding: 15px 20px;
+        display: block;
+        color: #F68686;
+        cursor: pointer;
+        font-size: 18px;
+        border: none;
+        background: white;
+        width: 100%;
+        text-align: left;
+        outline: none;
+    }
+
+    .sidebar a:hover,
+    .dropdown-btn:hover {
+        background: #F68686;
+        color: white;
+    }
+
+    /* Dropdown container */
+    .dropdown-container {
+        display: none;
+        background: #333;
+    }
+
+    .dropdown-container a {
+        padding-left: 40px;
+        font-size: 16px;
+    }
+
+    /* Main content */
+    .content {
+        flex: 1;
+        padding: 20px;
+    }
+
+    /* Hamburger Button */
+    .menu-btn {
+        display: none;
+        font-size: 28px;
+        background: white;
+        color: white;
+        padding: 10px 16px;
+        border: none;
+        cursor: pointer;
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        z-index: 2000;
+        border-radius: 6px;
+    }
+
+    /* Mobile behavior */
+    @media (max-width: 768px) {
+        .sidebar {
+            position: fixed;
+            right: -250px;
+            top: 0;
+            bottom: 0;
+            height: 100vh;
+            z-index: 1000;
+        }
+
+        .sidebar.active {
+            right: 0;
+        }
+
+        .menu-btn {
+            display: block;
+        }
+
+        .content {
+            padding-top: 60px;
+        }
+    }
+</style>
+</head>
+
+
+<main>
+  <section> 
+    <body>
+       <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Layout wrapper */
+    .wrapper {
+        display: flex;
+        min-height: 100vh;
+        margin: 0;
+        position: relative;
+    }
+
+    /* Sidebar (Right) */
+    .sidebar {
+        width: 250px;
+        background: whitesmoke;
+        color: #F68686;
+        padding-top: 20px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    .sidebar a, .dropdown-btn {
+        padding: 15px 20px;
+        display: block;
+        color: #F68686;
+        cursor: pointer;
+        font-size: 18px;
+        border: none;
+        background: white;
+        width: 100%;
+        text-align: left;
+        outline: none;
+    }
+
+    .sidebar a:hover,
+    .dropdown-btn:hover {
+        background: #F68686;
+        color: white;
+    }
+
+    /* Dropdown container */
+    .dropdown-container {
+        display: none;
+        background: #333;
+    }
+
+    .dropdown-container a {
+        padding-left: 40px;
+        font-size: 16px;
+    }
+
+    /* Main content */
+    .content {
+        flex: 1;
+        padding: 20px;
+    }
+
+    /* Hamburger Button */
+    .menu-btn {
+        display: none;
+        font-size: 28px;
+        background: white;
+        color: white;
+        padding: 10px 16px;
+        border: none;
+        cursor: pointer;
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        z-index: 2000;
+        border-radius: 6px;
+    }
+
+    /* Mobile behavior */
+    @media (max-width: 768px) {
+        .sidebar {
+            position: fixed;
+            right: -250px;
+            top: 0;
+            bottom: 0;
+            height: 100vh;
+            z-index: 1000;
+        }
+
+        .sidebar.active {
+            right: 0;
+        }
+
+        .menu-btn {
+            display: block;
+        }
+
+        .content {
+            padding-top: 60px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+<div class="wrapper">
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>New England Garden Design</h1>
+        <p> <h3> Colonial Revival </h3> The period between 1600-1775 was focussed on the efforts toward independence. Colonial garden plots would consist of fruit trees, vegetables, herbs and flower bulbs. New World plants were introduced to the settlers, including; Tobacco, Native Trees, and Corn, Shurbs, Vines, and Wildflowers and they were frequently used in their gardens. 
+        </p>
+        <p> <h3> Colonial Garden Design </h3> 
+        The style of garden inspiration dervied from Tudor and Medeival designs. Many practacalities were taken into consideration: gardens were proportional to faimly size, with livestock pens and walkways in rural areas. Working class and wealthy landowners would have more elaborate gardens. Symmetrical gardens would frame walkways in a formal arrangement. Additional focal points would include wells, fountains, seating, and trees throughout. </p>
+       
+    
+      <p><h1> Connecticut</h1></p>
+ <p> <h3>Florence Griswold Garden</h3> 
+A National Historic Landmark, the late Georgian-style mansion of the Florence Griswold Estate was built in 1871 in the Connecticut Countryside. The garden landscape was at its height in 1910 as flower gardens appear in the museums paintings during that period. There were flowerbeds that overflowed with colour and fragrance. The Victorian Period of gardening was less formal, with raised garden mixes; Phlox, Heliotrope, Iris, Peonies would be planted in graduated level, instead of mass plantings one variety. Tall Oriental Lilies, Roses, Violets and Lavendar were popular as perfumes attracting artists into the gardens.  </p>
+ <img src="file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/Gardens/Gris.jpg" alt=centered width="550" height="350"</p>
+
+     <p> <h3>Elizabeth Park Rose Garden</h3> The oldest municipal rose garden in the country is the Elizabeth Park Rose Garden, in Hartford Connecticut. The site began as a 2.5 acre, oblong parterre, with 190 varieties of roses. The American Rose Society selected the site as an offiical test garden in 1912. Adding a southern semi-circle section, then in 1937 the northern section completed the stadium's shape. At the garden's center is a summer house, with eight axial paths radiating outward of the central square. The paths have shaped arbours, and climbing roses. The garden has rectilinear rose beds that are evenly spaced, with north and south semi-circle with paths  lined with climbing rose fences and rows of acred beds, extending from the central square. It was listed to the National Register of Historic Places in 1983.   </p>
+ <img src="file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/Gardens/ElizabethRose.jpg" alt=centered width="550" height="350"</p>
+
+ <p><h1>Maine</h1></p>
+      <p> <h3>Coastal Maine Botanical Garden</h3> The largest garden in New England, there are more than 300 acres open to all visitors. 148 acorss rocky coastal forest, a Butterfly House, Dahlia and Iris Garden, Native Bee Exhibit, the Great Lawn, Giles and Rhododendron and Perennial Garden, Lerner Garden of the Five Senses, the Arbor Garden, Burpee Kitchen Garden, a Childrens Garden, Haney Hillside Garden, Fairy House Village, Vayo Meditation Garden, Cleaver Lawn, a Pond Garden, and a Shoreland Trail. </p>
+     <img src="file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/Gardens/MainBotanical.jpg" alt=centered width="550" height="350"</p>
+<p><h1>Massachusets</h1></p>
+<p> <h3>New England Botanical Garden</h3> The Worcester County Horticultural Society was founded in 1842 in Boylston, Massachusets. The Botanical Garden opened in 1986, with over 200 acres of conservatories, formal and naturalistic gardens, walking trails and pathways. The have developped Conservation Initiatives, Ecological Horticulture and Sustainability in the gardens, reducing the environmental impact.  </p> 
+  <img src="file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/Gardens/NewEnglandBotanicGarden.jpg" alt=centered width="550" height="250"</p>
+    <p> <h1>New York</h1></p>
+    <p> <h3>Elgin Botanical Garden</h3> The Elgin Botanic Garden was established in 1801 in New York City, between what is now 47th and 51st streets and Fifth and Sixth Avenues (Rockefeller Center). Named after the father of David Hossacks father's birthplace in Scotland. A catalog published in 1806 as the Descripton of Elgin Garden, outlines the varied collection of the Botanical garden;  Magnolias, Rhodedendron and Willows, Nymphoea, Pontederia, and 2000 other species housed on the property. Ornamental trees and shrubs were maintained in the greenhouses. The belt of forests consisted of species of Chestnut, Sugar Maple, Oak, Mountain Ash, Willow, Locust, Poplar, and the Elm. 
+        <img src="file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/Gardens/Elgin181.jpg" alt=centered width="550" height="350"</p>
+    </p>
+
+     <p><h1>Long Island</h1></p>
+<p><h3>Planting Fields Arboertum</h3> The property is on the National Register as a former estate ofthe W.R. Coe family. Rolling lawns, gardens, natural walks and woodlands, greenhouses with the largest colllection of Camellias in the surrounding area. As well as Hibiscus, Orchids and Succlents.
+</p>
+<img src="file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/Gardens/Planting Fields Arboretum.jpg" alt=centered width="550" height="350"</p>
+<p><h3>Bayard Cutting State Park</h3> With original plans drawn by Frederick Law Olmsted in 1887, the clearing was filled with oaks and years later a conifer collection was added. Currently there are Fir, Spruce, Pine, Hemlock, Yew, Cypress, and several other species. Dwarf Evergreens, Rhodedendron, Asaleas, Hollies, Wildflowers and Daffodils grow on the property. Pons and streamlets flow through the land that hosts aquatic birds, and small wildlife. 
+</p>
+<img src="file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/Gardens/Bayard-Cutting-Arboretum.jpg" alt=centered width="550" height="350"</p>
+
+<p><h3>Westbury Gardens</h3>
+List on the National Register of Historuc Places, the home of John S. Phipps was completed in 1906. The mansion sits upon 200 acres, with formal gardens, landscaped grounds, woodlands, ponds and lakes. In 1959, it was opened as a non profit charity to the public to access 216 acres. The English style perennials include; Foxglove, Delphiniums and herbaceous plants.</p>
+<img src="file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/Gardens/Westbury.jpg" alt=centered width="550" height="350"</p>
+<p><h3></h3></p>
+
+    <p><h1>Rhode Island</h1></p>
+
+    <p> <h3>The Elms' Garden</h3> The Elms is one of the iconic Gilded Age Mansions in Newport, Rhode Island. The summer house of businessman Edward Julius Berwind was completed in 1901 with Classical Revival Gardens. The property includes specimen trees, a large lower garden, fountains, a marble pavillion, a sunken garden and a carriage house. It is designated as a National Historic Landmark and has been open to the public since 1962.</p>
+    <img src="file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/Gardens/ElmsGarden3.jpg" alt=centered width="550" height="350"</p>
+        <p> <h3>The Breakers' Garden</h3> Cornelius Vanderbilt II's Newport summer cottage, is the palatial villa built in 1893. The gravel driveway is lined with Pin Oaks, and Red Maples. Trees that were imported include: North African Blue Atlas Cedar, Japanese Yew, Pfitzer Juniper and Arbor Vitae, Chinese Juniper and Dwarf Hemlock are neatly clipped. The formally landscaped terrace hosts a south parterre garden which grows: pink and white Alyssum, Blue Ageratum, Rhodedendrons, Mountain Laurel, Dogwoods and other flowering shrubs. </p>
+        </p><img src="file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/Gardens/the_breakers_garden_original.jpg" alt=centered width="550" height="350"</p>
+
+    <p> <h3>Marble House' Garden</h3> 
+    Designated as to the National Register of Historic Places and  a Landmark in 2006, the Gilded Age summer cottage estate of William Kissam Vanderbilt began work in 1888 and was completed in 1892. There is a Chinese Tea house modeled by the 12th century Song Dynasty in the lawn. The grounds were designed by landscape architect Ernest W. Bowditch. 
+</p>
+</p><img src="file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/Gardens/MarbleHouse.jpg" alt=centered width="550" height="350"</p>
+    <p> <h3>Rosecliff's Garden</h3>
+     </p>Built it 1902 for Theresa Fair Oelrichs, 
+     The stairway drops to a terraced lawn facing the ocean where The Breakers Estate is visible from the shore. A terrace garden is planted around a central fountain. Parterres lined flower beds are filled with Roses, and the pathways are covered in pergolas. The lawn facing the ocean has statues of swans, Cherubs and Eagles placed throughout.
+ </p><img src="file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/Gardens/Rosecliff.jpg" alt=centered width="550" height="350"</p>
+
+<p><h1>Philadelphia</h1></p>
+        <p> <h3> Springettsbury </h3>
+        The property of Springettsbury is an excellent example of early landscape architecture. Located in Philadelphia, Pennsylvania, William Penn was the English Quaker Proprietor of Pennsylvania when he first visited in 1682. The estate was passed down through generations, and it wasn't until 1740 that "The Proprietor's Garden" was designed in ancient style. A hornbeam, fishpond, a parterre, labrynth, spruce topiary and a hedge surrounding it. An orchard thrived with Lime trees, Pears, Peaches, Cherries, Figs and Grapes. A Botanical garden was developed several miles down the Schuylkill River. Lastly, the deer park had deer imported from England, as well as pheasants, and wild turkeys. Penn was one of the first to import vines from Bordeaux, and after establishing a Vineyard Hill on the porperty, wich didn't start producing wine until 1741 when the first natural produced American European hybrid. Penn return to England, and made note that the estate should remain an English garden; Magnolia, Azalea, Rhododendron and Laurel. Although the estate was consumed by fire in 1807, the Pensbury Manor House and gardens, William's country house remains a place to explore.
+    </p>
+     <p> <img src="file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/Gardens/Pensbury.jpg" alt=centered width="350" height="500"</p>
+    </p>
+</div>
+
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+
+ <a href="GardenDesign.html">Garden Design</a>
+
+        <h5>Time</h5>
+
+                <!-- Dropdown 1 -->
+           <button class="dropdown-btn">Ancient</button>
+        <div class="dropdown-container">
+            <a href="Egyptian.html">Egyptian</a>
+            <a href="Assyrian.html">Assyrian, Babylon, Persian</a>
+            <a href="GreekandHellenistic.html">Greek and Hellenistic</a>
+            <a href="AncientRoman.html">Roman</a>
+        </div>
+
+        <!-- Dropdown 2 -->
+        <button class="dropdown-btn">Middle Ages</button>
+        <div class="dropdown-container">
+            <a href="Byzantine.html">Byzantine</a>
+          </div>
+
+        <!-- Dropdown 3 -->
+        <button class="dropdown-btn">Classical</button>
+        <div class="dropdown-container">
+            <a href="ClassicGreek.html">Greek</a>
+            <a href="ClassicRoman.html">Roman</a>
+        </div>
+
+        <!-- Dropdown 4 -->
+        <button class="dropdown-btn">Medieval</button>
+        <div class="dropdown-container">
+            <a href="Monastic.html">Monastic</a>
+            <a href="Charlemagne.html">Charlemagne</a>
+            <a href="MoorishSpain.html">Moorish Spain</a>
+            <a href="MedievalEnglish.html">English</a>
+        </div>
+
+        <!-- Dropdown 5 -->
+        <button class="dropdown-btn">Renaissance</button>
+        <div class="dropdown-container">
+            <a href="Versailles.html">Versailles</a>
+            <a href="Formal.html">Formal</a>
+            <a href="Baroque.html">Baroque</a>
+             <a href="Tudor.html">Tudor</a>
+         
+        </div>
+
+                <!-- Dropdown 6 -->
+        <button class="dropdown-btn">18th Century</button>
+        <div class="dropdown-container">
+            <a href="English18.html">English</a>
+            <a href="USA18.html">USA</a>
+            <a href="Dutch.html">Dutch</a>
+            <a href="Germany.html">Germany</a>
+            <a href="Austria.html">Austria</a>
+            <a href="Spain.html">Spain</a>
+            <a href="Sweden.html">Sweden</a>
+        </div>
+
+                <!-- Dropdown 7 -->
+        <button class="dropdown-btn">Modern</button>
+        <div class="dropdown-container">
+            <a href="Contemporary.html">Contemporary</a>
+            <a href="Bauhaus.html">Bauhaus</a>
+            <a href="Corbusier.html">Le Corbusier</a>
+            <a href="FletcherSteele.html">Fletcher Steele</a>
+            <a href="DanKiley.html">Dan Kiley</a>
+        </div>
+
+        <h5> Regional </h5>
+                <!-- Dropdown 9 -->
+        <button class="dropdown-btn">Italian</button>
+        <div class="dropdown-container">
+            <a href="Sicillian.html">Sicillian</a>
+            <a href="Roman.html">Roman</a>
+            <a href="Florentine.html">Florentine</a>
+            <a href="Lombardian.html">Lombardian</a>
+      
+        </div>
+
+        <!-- Dropdown 10 -->
+        <button class="dropdown-btn">English</button>
+        <div class="dropdown-container">
+        <a href="Georgian.html">Georgian</a>
+                <a href="MedievalEnglish.html">Medieval</a>
+            <a href="Stuart.html">Stuart</a>
+            <a href="Victorian.html">Victorian</a>
+            <a href="twentiethcentury.html">20th Century</a>
+        </div>
+
+        <!-- Dropdown 11 -->
+        <button class="dropdown-btn">French</button>
+        <div class="dropdown-container">
+                  <a href="Provence.html">Provence</a>
+            <a href="Versailles.html">Versailles</a>
+        </div>
+
+        <!-- Dropdown 12 -->
+                <button class="dropdown-btn">Eastern</button>
+        <div class="dropdown-container">
+            <a href="Chinese.html">Chinese</a>
+            <a href="Japan.html">Japan</a>
+            <a href="India.html">India</a>
+        </div>
+
+        <!-- Dropdown 13 -->
+                <button class="dropdown-btn">USA</button>
+        <div class="dropdown-container">
+            <a href="CentralPark.html">Central Park</a>
+              <a href="Rosegardens.html">Rose Gardens</a>
+            <a href="NewEngland.html">New England</a>
+            <a href="Biltmore.html">Biltmore Estate</a>
+            <a href="USACapital.html">U.S. Capital Grounds</a>
+
+        </div>
+        <a href="contact.html">Contact</a>
+        <a href="Citations.html">Citations</a>
+
+</div>
+<script>
+function toggleMenu() {
+    document.getElementById("sidebar").classList.toggle("active");
+}
+
+// Dropdown logic
+var dropdowns = document.getElementsByClassName("dropdown-btn");
+for (var i = 0; i < dropdowns.length; i++) {
+    dropdowns[i].addEventListener("click", function() {
+        this.classList.toggle("active-dropdown");
+        var dropdownContent = this.nextElementSibling;
+        dropdownContent.style.display =
+            dropdownContent.style.display === "block" ? "none" : "block";
+    });
+}
+</script>
+
+</body>
+
+
+
+</style>
+</div>
+</main>
+</section>
+
+<style>
+div.scroll-container img {
+  padding: 10px;</style>
+  
+<div class="scroll-container">
+    <img src="C:\Users\geosi\OneDrive\Documents\Code\Flowers\Images\163B9D15.jpeg" style="display: block; margin: auto;" width="350" height="500">
+    <h5> Oasis Lavender Farm, North of Summerland in the Garnet Valley </h5>
+<style> div.scroll-container {
+  background-color: #FDD7D7;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+</style>
+</div>
+
+</section>
+</main>
+
+
+<footer>
+    <img src="file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/01126.jpg" alt="Flowers of the Okanagan" class="footer-image" 
+<div class="header-text">
+</div>
+<div class="muted"></div>
+<div class="muted"></div>
+</footer>
+
+
+</div>
+
+</body>
+</html>
