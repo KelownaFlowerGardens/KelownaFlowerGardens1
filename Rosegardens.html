@@ -1,0 +1,931 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flower Society</title>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+</body>
+  </head>
+  <body>
+  <h1>Kelowna Flower Garden's</h1>
+  <p>Kelowna's Flower Garden Club</p> 
+  <style>
+
+
+:root{
+--bg: ##F68686;/* pink */
+--card: #0b1220; /* card bg */
+--muted: #94a3b8; /* muted text */
+--accent: #F695B5; /* coral accent */
+--accent-2: #FDD7D7; /* cream accent */
+--glass: rgba(255,255,255,0.04);
+--radius: 14px;
+--max-width: 1100px;
+--gap: 1.25rem;
+--shadow: 0 6px 20px rgba(2,6,23,0.6);
+--fw-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+margin:0;
+font-family:var(--fw-sans);
+background:linear-gradient(180deg,var(--bg) 0%, white 100%);
+color: #F68686;
+line-height:1.15;
+padding:2rem 1rem;
+}
+
+
+.wrap{
+max-width:var(--max-width);
+margin:0 auto;
+display:flex;
+flex-direction:column;
+gap:var(--gap);
+}
+
+
+header{
+position:center;
+width:100vw;
+left:50%;
+right:50%;
+margin-left:-50vw;
+margin-right:-50vw;
+overflow:hidden;
+height:50vh; /* cropped to about 1/2 screen height */
+}
+
+header img.hero-header {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  background-image: file:///C:/Users/geosi/OneDrive/Documents/Code/Flowers/Images/0011_26.jpg('0011_26.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+@media (max-width: 768px) {
+  .hero-header {
+    height: 250px;
+    padding: 50px 15px;
+  }
+
+  .hero-header h1 {
+    font-size: 24px;
+  }
+
+  .hero-header p {
+    font-size: 16px;
+  }
+}
+
+.header-text{
+text-align:center;
+color:#F68686;
+}
+
+
+.header-text h1{
+font-size:clamp(1.8rem,4vw,3rem);
+margin:0;
+position;center
+}
+
+
+.header-text p{
+font-size:1.1rem;
+color:var(--muted);
+position;center
+}
+
+nav{display:flex;gap:1rem;align-items:center;justify-content:center;margin-top:1rem;align-items:center}
+nav a{
+color:var(--muted);
+text-decoration:none;
+padding:.35rem .6rem;
+border-radius:8px;
+font-weight:600;
+font-size:.95rem;
+}
+nav a:hover{color:var(--accent);background:rgba(124,58,237,0.06)}
+
+
+main{margin-top:2rem;}
+
+
+footer{padding:1rem 0;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+.centered {
+text-align: center; /* Centers text horizontally */
+</style>
+</style>
+</head>
+<body>
+<div class="wrap">
+
+
+<header>
+<img src="01126.jpg" alt=centered "Flowers of the Okanagan" class="header-image" 
+<div class="header-text">
+<p></p>
+</div>
+
+<nav>
+<div class="topnav" id="myTopnav">
+  <div class="dropdown">
+  <button class="dropbtn" href="Home.html" class="active">Home</button>
+    <div class="dropdown-content">
+            <a href="Home.html">Home</a>
+         <a href="History.html"></a>
+                    </div>
+                  </div>
+             
+<div class="dropdown">
+    <button class="dropbtn" href="GardensDesign.html" class="active">Garden Design</button>
+    <div class="dropdown-content">
+            <a href="GardenDesign.html">Garden Design</a>
+         <a href="Gardens of Kelowna.html">Gardens of Kelowna</a>
+      <a href="climate.html">Climate</a>
+            <a href="Roots.html">Roots</a>
+                    </div>
+                  </div>
+<div class="dropdown">
+    <button class="dropbtn" href="About.html" class="active">About
+         <div class="dropdown-content">
+         <a href="About.html">About</a>
+      <a href="Boardmembers.html"></a>
+      <a href=".html"></a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+<button class="dropbtn" href="Regional Species.html" class="active">Regional Species</button>
+    <div class="dropdown-content">
+                 <a href="Regional Species.html">Regional Species</a>
+               <a href="History.html">History</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+  <button class="dropbtn" href="Awards.html" class="active">Awards</button>
+   <div class="dropdown-content">
+  <a href="Awards.html" class="active">Awards</a>
+</div>
+</div>
+
+ <div class="dropdown-content">
+    <button class="dropbtn" href="Resources.html" class="active">Resources</button>
+          <div class="dropdown-content">
+         <a href="Resources.html">Resources</a>
+         <a href="https://www.kew.org/kew-gardens">Kew Royal Botanical Gardens</a>
+          <a href="">Index</a>
+  </div>
+</div>
+
+<div class="dropdown">
+    <button class="dropbtn" href="Roses.html" class="active">Roses</button>
+  <div class="dropdown-content">
+            <a href="Roses.html">Roses</a>
+      <a href="https://rose.org/">American Rose Society</a>
+      <a href="https://canadianrosesociety.org/">Canadian Rose Society</a>
+    </div>
+  </div>
+
+ <div class="dropdown">
+   <button class="dropbtn" href="Valley Art.html" class="active">Valley Art</button>
+     <div class="dropdown-content">
+<a href="Valley Art.html">Valley Art</a>
+  </div>
+</div>
+
+   <div class="dropdown">
+     <button class="dropbtn" href="Bridal Bouquet.html" class="active">Bridal Bouquet</button>
+      <div class="dropdown-content">
+<a href="Bridal Bouquets.html">Bridal Bouquets</a>
+ </div>
+</div>
+
+   <div class="dropdown">
+<button class="dropbtn" href="Calendar".html" class="active">Calendar</button>
+   <div class="dropdown-content">
+<a href="Calendar.html" class="active">Calendar</a>
+</div>
+</div>
+  
+  <div class="dropdown">
+    <button class="dropbtn" href="Members.html" class="active">Members</button>
+        <div class="dropdown-content">
+  <a href="Members.html" class="active">Members</a>
+      <a href="Contact.html" class="active">Contact</a>
+      <a href="About.html">About</a>
+      <a href="Resources.html">Resources</a>
+    </div>
+  </div>
+
+</div>
+<style>
+/* Add a white background color to the top navigation */
+.topnav {
+  background-color: #white;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: white;
+  color: #white;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: white;
+  color: #F68686;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #F68686;
+  padding: 14px 16px;
+  background-color: white;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #F68686;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a white background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+  color: white;
+}
+
+/* Add a background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #F68686;
+  color: white;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+</nav>
+
+<main>
+  <section> 
+    <body>
+       <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Layout wrapper */
+    .wrapper {
+        display: flex;
+        min-height: 100vh;
+        margin: 0;
+        position: relative;
+    }
+
+    /* Sidebar (Right) */
+    .sidebar {
+        width: 250px;
+        background: whitesmoke;
+        color: #F68686;
+        padding-top: 20px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    .sidebar a, .dropdown-btn {
+        padding: 15px 20px;
+        display: block;
+        color: #F68686;
+        cursor: pointer;
+        font-size: 18px;
+        border: none;
+        background: white;
+        width: 100%;
+        text-align: left;
+        outline: none;
+    }
+
+    .sidebar a:hover,
+    .dropdown-btn:hover {
+        background: #F68686;
+        color: white;
+    }
+
+    /* Dropdown container */
+    .dropdown-container {
+        display: none;
+        background: #333;
+    }
+
+    .dropdown-container a {
+        padding-left: 40px;
+        font-size: 16px;
+    }
+
+    /* Main content */
+    .content {
+        flex: 1;
+        padding: 20px;
+    }
+
+    /* Hamburger Button */
+    .menu-btn {
+        display: none;
+        font-size: 28px;
+        background: white;
+        color: white;
+        padding: 10px 16px;
+        border: none;
+        cursor: pointer;
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        z-index: 2000;
+        border-radius: 6px;
+    }
+
+    /* Mobile behavior */
+    @media (max-width: 768px) {
+        .sidebar {
+            position: fixed;
+            right: -250px;
+            top: 0;
+            bottom: 0;
+            height: 100vh;
+            z-index: 1000;
+        }
+
+        .sidebar.active {
+            right: 0;
+        }
+
+        .menu-btn {
+            display: block;
+        }
+
+        .content {
+            padding-top: 60px;
+        }
+    }
+</style>
+</head>
+
+
+<main>
+  <section> 
+    <body>
+       <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Layout wrapper */
+    .wrapper {
+        display: flex;
+        min-height: 100vh;
+        margin: 0;
+        position: relative;
+    }
+
+    /* Sidebar (Right) */
+    .sidebar {
+        width: 250px;
+        background: whitesmoke;
+        color: #F68686;
+        padding-top: 20px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    .sidebar a, .dropdown-btn {
+        padding: 15px 20px;
+        display: block;
+        color: #F68686;
+        cursor: pointer;
+        font-size: 18px;
+        border: none;
+        background: white;
+        width: 100%;
+        text-align: left;
+        outline: none;
+    }
+
+    .sidebar a:hover,
+    .dropdown-btn:hover {
+        background: #F68686;
+        color: white;
+    }
+
+    /* Dropdown container */
+    .dropdown-container {
+        display: none;
+        background: #333;
+    }
+
+    .dropdown-container a {
+        padding-left: 40px;
+        font-size: 16px;
+    }
+
+    /* Main content */
+    .content {
+        flex: 1;
+        padding: 20px;
+    }
+
+    /* Hamburger Button */
+    .menu-btn {
+        display: none;
+        font-size: 28px;
+        background: white;
+        color: white;
+        padding: 10px 16px;
+        border: none;
+        cursor: pointer;
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        z-index: 2000;
+        border-radius: 6px;
+    }
+
+    /* Mobile behavior */
+    @media (max-width: 768px) {
+        .sidebar {
+            position: fixed;
+            right: -250px;
+            top: 0;
+            bottom: 0;
+            height: 100vh;
+            z-index: 1000;
+        }
+
+        .sidebar.active {
+            right: 0;
+        }
+
+        .menu-btn {
+            display: block;
+        }
+
+        .content {
+            padding-top: 60px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+<div class="wrapper">
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Rose Gardens of the United States of America</h1>
+        <p><h3>California</h3></p>
+        <p>
+Arcadia, County Park Rose Garden
+Berkeley, Municipal Rose Garden
+Fresno, Municipal Rose Garden
+La Canada, Descanso Gardens
+Los Angeles, Exposition Park Rose Garden
+Oakland, Mormon Amphitheater of Roses
+Riverside, Fairmount Park Rose Garden</p>
+<p>
+Rose Hills Memorial Park, Whittier, CA</p>
+
+<p><h3>Colorado</h3></p>
+<p>
+Denver, Denver Botanic Gardens</p>
+<p>Longmont, Memorial Rose Garden<p>
+
+<p><h3>Connecticut</h3></p><p>
+Norwich, Memorial Rose Garden</p>
+<p>Waterbury, Hamilton Park Rose Garden</p>
+<p>West Hartford, Elizabeth Park Rose Garden</p>
+
+<p><h3>Dictrict of Columbia</h3></p>
+<p>Washington, Shoreham Hotel Rose Garden</p>
+
+<p><h3>Florida</h3></p>
+<p>Cypress Gardens, Cypress Gardens</p>
+
+<p><h3>Georgia</h3></p>
+<p>Atlanta, Greater Atlanta Rose Garden, Piedmont Park</p>
+
+<p><h3>Hawaii</h3></p>
+<p>Kula, University of Hawaii, College of Tropical Agriculture</p>
+
+<p><h3>Idaho</h3></p>
+<p>Boise, Julia Davis Park</p>
+<p>Lewiston, Memorial Bridge Rose Garden</p>
+
+<p><h3>Illinois</h3></p>
+<p>Chicago, Grant Park Rose Garden and
+Marquette Park Rose Garden</p>
+<p>Highland Park, Gardener’s Memorial Garden</p>
+<p>Libertyville, Cook Memorial Rose Garden</p>
+<p>Peoria, Park District Rose Garden</p>
+<p>Glen Oak Park Conservatory</p>
+<p>Wheaton, Robert R. McCormick Memorial Gardens</p>
+
+<p><h3>Indiana</h3></p>
+<p>Fort Wayne, Lakeside Park Rose Garden</p>
+<p>Richmond, E. G. Hill Memorial Rose Garden, Glen Miller Park</p>
+
+<p><h3>Iowa</h3></p>
+<p>Ames, Iowa State University Rose Garden</p>
+<p>Bettendorf, Community Center Rose Garden</p>
+<p>Cedar Rapids, Huston Park Rose Garden</p>
+
+<p><h3>Kansas</h3></p>
+<p>Manhattan, Kansas State University Rose Garden</p>
+<p>Topeka, E. F. A. Reinisch Rose and Test Garden, Gage Park</p>
+
+<p><h3>Kentucky</h3></p>
+<p>Louisville, Kentucky Memorial Rose Garden</p>
+
+<p><h3>Louisiana</h3></p>
+<p>Baton Rouge, L.S.U. Rose Test Garden</p>
+<p>Many, Hodges Gardens</p>
+<p>New Orleans, Pauline Worthington Memorial Rose Garden, City Park</p>
+<p>Shreveport, American Rose Center</p>
+
+<p><h3>Massachusetts<h3></h3>
+<p>Westfield, The Stanley Park</p>
+
+<p><h3>Michigan<h3></h3>
+<p>East Lansing, Michigan State University Horticulture Gardens</p>
+<p>Lansing, Francis Park Memorial Rose Garden</p>
+
+<p><h3>Minnestoa<h3></h3>
+<p>Duluth, Duluth Rose Garden</p>
+<p>Minneapolis, Municipal Rose Garden</p>
+
+<p><h3>Missouri</h3></p>
+<p>Cape Girardeau, Rose Display Garden, Capaha Park</p>
+<p>Kansas City, Blue Ridge Mall Rose Garden and Laura Conyers Smith Memorial Rose Garden</p>
+<p>St. Louis, Missouri Botanical Rose Garden</p>
+
+<p><h3>Montana</h3></p>
+<p>Missoula, Memorial Rose Garden, Sunset Park</p>
+
+<p><h3>Nebraska</h3></p>
+<p>Lincoln, Municipal Rose Garden</p>
+<p>Omaha, Memorial Park Rose Garden</p>
+
+<p><h3>Nevada</h3></p>
+<p>Reno, Municipal Rose Garden, Idlewild Park</p>
+
+<p><h3>New Jersey</h3></p>
+<p>Bloomfield, Brookdale Park Rose Garden</p>
+<p>East Millstone, Colonial Park Rose Garden<p>
+
+<p><h3>New Mexico</h3></p>
+<p>Albuquerque, Prospect Park Rose Garden</p>
+<p>Hobbs, Community Rose Garden, Lea General Hospital</p>
+
+<p><h3>New York</h3></p>
+<p>Brooklyn, Cranford Memorial Rose Garden, Brooklyn Botanic Garden</p>
+<p>Buffalo, Niagara Frontier Trial Rose Garden, Humboldt Park</p>
+<p>Flushing, Queens Botanical Garden</p>
+<p>Ithaca, Cornell University Rose Garden</p>
+<p>Newark, The National Rose Garden</p>
+<p>New York, United Nations Rose Garden</p>
+<p>Rochester, Maplewood Rose Garden</p>
+<p>Schenectady, Central Park Rose Garden</p>
+
+<p><h3>North Carolina</h3></p>
+<p>Raleigh, Municipal Rose Garden</p>
+
+<p><h3>Ohio</h3></p>
+<p>Columbus, Park of Roses and Ohio State University Rose Garden</p>
+<p>Mansfield, Kingwood Center</p>
+<p>Wooster, Ohio Agricultural Research Center</p>
+
+<p><h3>Oklahoma</h3></p>
+<p>Muskogee, J. E. Conard Municipal Rose Garden, Honor Heights Park</p>
+<p>Oklahoma City, Municipal Rose Garden, Will Rogers Park</p>
+<p>Tulsa, Municipal Rose Garden, Woodward Park</p>
+
+<p><h3>Oregon</h3></p>
+<p>Corvallis, Municipal Rose Garden, Avery Park</p>
+<p>Eugene, George E. Owen Municipal Rose Garden</p>
+<p>Portland, International Rose Test Garden</p>
+
+<p><h3>Pennsylvania</h3>
+<p>Allentown, Malcolm W. Gross Memorial Rose Garden</p>
+<p>Hershey, Rose Gardens and Arboretum</p>
+<p>Kennett Square, Longwood Gardens</p>
+<p>McKeesport, Renziehausen Park Arboretum</p>
+<p>Pittsburgh, Mellon Park Rose Gardens</p>
+<p>Reading, Municipal Rose Garden</p>
+<p>University Park, Penn State University Rose Garden</p>
+
+<p><h3>South Carolina</h3></p>
+<p>Orangeburg, Edisto Rose Garden</p>
+
+<p><h3>Tennessee</h3></p>
+<p>Chattanooga, Municipal Rose Garden, Warner Park</p>
+<p>Memphis, Municipal Rose Garden, Audubon Park</p>
+
+<p><h3>Texas</h3></p>
+<p>Corpus Christi, Rose Society Display Garden</p>
+<p>Dallas, Samuel-Grand Municipal Rose Garden</p>
+<p>El Paso, Municipal Rose Garden</p>
+<p>Fort Worth, Botanic Garden</p>
+<p>Houston, Municipal Rose Garden,</p>
+<p>San Angelo, Municipal Rose Garden, Civic League Park</p>
+
+
+<p><h3>Utah</h3></p>
+<p>Fillmore, Territorial Statehouse Rose Garden, Old Capitol State Park</p>
+<p>Nephi, Municipal Memorial Rose Garden</p>
+<p>Salt Lake City, Municipal Rose Garden</p>
+
+<p><h3>Virginia</h3></p>
+<p>Arlington, Memorial Rose Garden</p>
+<p>Roanoke, Mountain View Garden</p>
+
+<p><h3>Washington</h3></p>
+<p>Bellingham, Fairhaven Park Rose Garden</p>
+<p>Chehalis, Municipal Rose Garden</p>
+<p>Seattle, Woodland Park Rose Garden</p>
+<p>Spokane, Rose Hill, Manito Park</p>
+
+<p><h3>West Virginia</h3></p>
+<p>Huntington, Ritter Park Rose Garden</p>
+
+<p><h3>Wisconsin</h3></p>
+<p>Whitnall Park Madison, Olbrich Park</p>
+           
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+<a href="GardenDesign.html">Garden Design</a>
+
+        <h5>Time</h5>
+                <!-- Dropdown 1 -->
+           <button class="dropdown-btn">Ancient</button>
+        <div class="dropdown-container">
+            <a href="Egyptian.html">Egyptian</a>
+            <a href="Assyrian.html">Assyrian, Babylon, Persian</a>
+            <a href="GreekandHellenistic.html">Greek and Hellenistic</a>
+            <a href="AncientRoman.html">Roman</a>
+        </div>
+
+        <!-- Dropdown 2 -->
+        <button class="dropdown-btn">Middle Ages</button>
+        <div class="dropdown-container">
+            <a href="Byzantine.html">Byzantine</a>
+          </div>
+
+        <!-- Dropdown 3 -->
+        <button class="dropdown-btn">Classical</button>
+        <div class="dropdown-container">
+            <a href="ClassicGreek.html">Greek</a>
+            <a href="ClassicRoman.html">Roman</a>
+        </div>
+
+        <!-- Dropdown 4 -->
+        <button class="dropdown-btn">Medieval</button>
+        <div class="dropdown-container">
+            <a href="Monastic.html">Monastic</a>
+            <a href="Charlemagne.html">Charlemagne</a>
+            <a href="MoorishSpain.html">Moorish Spain</a>
+            <a href="MedievalEnglish.html">English</a>
+        </div>
+
+        <!-- Dropdown 5 -->
+        <button class="dropdown-btn">Renaissance</button>
+        <div class="dropdown-container">
+            <a href="Versailles.html">Versailles</a>
+            <a href="Formal.html">Formal</a>
+            <a href="Baroque.html">Baroque</a>
+             <a href="Tudor.html">Tudor</a>
+         
+        </div>
+
+                <!-- Dropdown 6 -->
+        <button class="dropdown-btn">18th Century</button>
+        <div class="dropdown-container">
+            <a href="English18.html">English</a>
+            <a href="USA18.html">USA</a>
+            <a href="Dutch.html">Dutch</a>
+            <a href="Germany.html">Germany</a>
+            <a href="Austria.html">Austria</a>
+            <a href="Spain.html">Spain</a>
+            <a href="Sweden.html">Sweden</a>
+        </div>
+
+                <!-- Dropdown 7 -->
+        <button class="dropdown-btn">Modern</button>
+        <div class="dropdown-container">
+            <a href="Contemporary.html">Contemporary</a>
+            <a href="Bauhaus.html">Bauhaus</a>
+            <a href="Corbusier.html">Le Corbusier</a>
+            <a href="FletcherSteele.html">Fletcher Steele</a>
+            <a href="DanKiley.html">Dan Kiley</a>
+        </div>
+
+        <h5> Regional </h5>
+                <!-- Dropdown 9 -->
+        <button class="dropdown-btn">Italian</button>
+        <div class="dropdown-container">
+            <a href="Sicillian.html">Sicillian</a>
+            <a href="Roman.html">Roman</a>
+            <a href="Florentine.html">Florentine</a>
+            <a href="Lombardian.html">Lombardian</a>
+      
+        </div>
+
+        <!-- Dropdown 10 -->
+        <button class="dropdown-btn">English</button>
+        <div class="dropdown-container">
+        <a href="Georgian.html">Georgian</a>
+         <a href="MedievalEnglish.html">Medieval</a>
+            <a href="Stuart.html">Stuart</a>
+            <a href="Victorian.html">Victorian</a>
+            <a href="twentiethcentury.html">20th Century</a>
+        </div>
+
+        <!-- Dropdown 11 -->
+        <button class="dropdown-btn">French</button>
+        <div class="dropdown-container">
+                  <a href="Provence.html">Provence</a>
+            <a href="Versailles.html">Versailles</a>
+        </div>
+
+        <!-- Dropdown 12 -->
+                <button class="dropdown-btn">Eastern</button>
+        <div class="dropdown-container">
+            <a href="Chinese.html">Chinese</a>
+            <a href="Japan.html">Japan</a>
+            <a href="India.html">India</a>
+        </div>
+
+        <!-- Dropdown 13 -->
+                <button class="dropdown-btn">USA</button>
+        <div class="dropdown-container">
+            <a href="CentralPark.html">Central Park</a>
+                <a href="Rosegardens.html">Rose Gardens</a>
+            <a href="NewEngland.html">New England</a>
+            <a href="Biltmore.html">Biltmore Estate</a>
+            <a href="USACapital.html">U.S. Capital Grounds</a>
+
+        </div>
+        <a href="contact.html">Contact</a>
+        <a href="Citations.html">Citations</a>
+
+</div>
+<script>
+function toggleMenu() {
+    document.getElementById("sidebar").classList.toggle("active");
+}
+
+// Dropdown logic
+var dropdowns = document.getElementsByClassName("dropdown-btn");
+for (var i = 0; i < dropdowns.length; i++) {
+    dropdowns[i].addEventListener("click", function() {
+        this.classList.toggle("active-dropdown");
+        var dropdownContent = this.nextElementSibling;
+        dropdownContent.style.display =
+            dropdownContent.style.display === "block" ? "none" : "block";
+    });
+}
+</script>
+
+</body>
+
+
+
+</style>
+</div>
+</main>
+</section>
+
+<style>
+div.scroll-container img {
+  padding: 10px;</style>
+  
+<div class="scroll-container">
+    <img src="163B9D15.jpeg" style="display: block; margin: auto;" width="350" height="500">
+    <h5> Oasis Lavender Farm, North of Summerland in the Garnet Valley </h5>
+<style> div.scroll-container {
+  background-color: #FDD7D7;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+</style>
+</div>
+
+</section>
+</main>
+
+
+<footer>
+    <img src="01126.jpg" alt="Flowers of the Okanagan" class="footer-image" 
+<div class="header-text">
+</div>
+<div class="muted"></div>
+<div class="muted"></div>
+</footer>
+
+
+</div>
+
+</body>
+</html>
